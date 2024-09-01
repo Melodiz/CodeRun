@@ -1,0 +1,19 @@
+## Task Description
+
+You are given a mathematical function with coefficients that include small random perturbations. The function is defined as follows:
+
+$$
+f(x) =  ((a + \varepsilon_a)\sin x + (b + \varepsilon_b)\ln x)^2 + (c + \varepsilon_c)x^2
+$$
+
+where:
+- \( \varepsilon_i \) are random variables that take values from the interval \([-0.001, 0.001]\).
+
+Your task is to:
+
+1. **Understand the function**: The function \( f(x) \) is composed of three main parts:
+   - \( (a + \varepsilon_a)\sin x \)
+   - \( (b + \varepsilon_b)\ln x \)
+   - \( (c + \varepsilon_c)x^2 \)
+
+2. **Identify the coefficients**: The coefficients \( a \), \( b \), and \( c \) are perturbed by small random values \( \varepsilon_a \), \( \varepsilon_b \), and \( \varepsilon_c \) respectively.
