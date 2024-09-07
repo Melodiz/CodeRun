@@ -21,16 +21,26 @@ def checkIfPointFarEnoughFromVertices(point, treshold_square):
             return False
     return True
 
+def write_add_to_file(counter, n_samples, filename='ML/Medium/553_points-in-cube/result.txt'):
+    with open(filename, 'a') as file:
+        file.write(f"{counter} {n_samples}\n")
+
 def main():
     treshold_square = 0.5625 
-    n_samples = int(1e8)
-    counter = 0
-    for _ in tqdm(range(n_samples), desc='Progress'):
-        point = generate_random_point_in_UnitCube()
-        if checkIfPointFarEnoughFromVertices(point, treshold_square): 
-            counter += 1
-    result = counter / n_samples
-    print(round(result, 6))
+    n_samples = 10**6
+    counter = 2580547
+    samples_counter = 208000000
+    for _ in tqdm(range(1_000), desc="Generating random points"):
+        samples_counter += n_samples
+        for _ in range(n_samples):
+            point = generate_random_point_in_UnitCube()
+            if checkIfPointFarEnoughFromVertices(point, treshold_square):
+                counter += 1
+        write_add_to_file(counter, samples_counter)
+    print(f"Total points: {counter}")
+    print(f"Total samples: {samples_counter}")
+    print(f"Probability: {counter / samples_counter:.6f}")
+    return counter / samples_counter
 
 if __name__ == "__main__":
     main()
