@@ -4,10 +4,18 @@
 **/.DS_Store
 
 # not solved tasks (but attempted)
-Algorithms/Easy/17_conveyor
-Algorithms/Easy/547_linear-postman
-
-ML/Hard/29_homographs
-ML/Hard/214_restaurants
-ML/Medium/550_misprints-again/
+ML/Medium/572_mountain_trip/
+ML/Medium/569_pupurum_planet/
+ML/Medium/568_least_real_root/
+ML/Medium/550_misprints_again/
 ML/Medium/552_concatenation/
+ML/Hard/sequence_clustering/
+ML/Hard/214_restaurants/
+ML/Hard/29_homographs/
+
+Algorithms/Easy/17_conveyor/
+Algorithms/Easy/547_linear_postman/
+Algorithms/Medium/5_cafe/
+
+# my utils for file system organization 
+utils/
