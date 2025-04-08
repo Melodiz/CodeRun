@@ -86,7 +86,7 @@ def get_problem_info(problem_id):
         problem_id (str): The problem ID (e.g., 'median-out-of-three')
         
     Returns:
-        dict: A dictionary containing 'title', 'description', 'tags', and 'url'
+        dict: A dictionary containing 'title', 'description', 'tags', 'url', and 'html_content'
     """
     url = f"https://coderun.yandex.ru/problem/{problem_id}/"
     
@@ -100,7 +100,8 @@ def get_problem_info(problem_id):
         response = requests.get(url, headers=headers)
         response.raise_for_status()  # Raise an exception for HTTP errors
         
-        soup = BeautifulSoup(response.text, 'html.parser')
+        html_content = response.text
+        soup = BeautifulSoup(html_content, 'html.parser')
         
         # Extract title from the HTML title tag
         title_tag = soup.title
@@ -172,16 +173,17 @@ def get_problem_info(problem_id):
             'title': title,
             'description': description,
             'tags': tags,
-            'url': url
+            'url': url,
+            'html_content': html_content  # Include the HTML content
         }
-    
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching problem {problem_id}: {e}")
+    except Exception as e:
+        print(f"Error fetching problem info: {e}")
         return {
-            'title': "Error fetching title",
-            'description': f"Error: {str(e)}",
+            'title': f"Error: {e}",
+            'description': "",
             'tags': [],
-            'url': url
+            'url': url,
+            'html_content': ""
         }
 
 def extract_problem_id(folder_name):

@@ -166,6 +166,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [51. Номер появления слова](https://coderun.yandex.ru/problem/word-appearance-number/) [standard library, counting, dict] - [Solution](Algorithms/Easy/51_word_appearance_number)
 * [103. Расстановка ноутбуков](https://coderun.yandex.ru/problem/arrangement-laptops/) [brute force] - [Solution](Algorithms/Easy/103_arrangement_laptops)
 * [157. Захар и загадочные совпадения](https://coderun.yandex.ru/problem/qx-d/) [greedy, json] - [Solution](Algorithms/Easy/157_qx_d)
+* [434. Сумма](https://coderun.yandex.ru/problem/splitting-into-terms/) - [Solution](Algorithms/Easy/434_splitting_into_terms)
 
 ## Medium <a name="algorithms-medium"></a>
 
