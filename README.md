@@ -167,6 +167,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [103. Расстановка ноутбуков](https://coderun.yandex.ru/problem/arrangement-laptops/) [brute force] - [Solution](Algorithms/Easy/103_arrangement_laptops)
 * [157. Захар и загадочные совпадения](https://coderun.yandex.ru/problem/qx-d/) [greedy, json] - [Solution](Algorithms/Easy/157_qx_d)
 * [434. Сумма](https://coderun.yandex.ru/problem/splitting-into-terms/) - [Solution](Algorithms/Easy/434_splitting_into_terms)
+* [212. Добавить минусы](https://coderun.yandex.ru/problem/max-num-split/) [implementation, brute force] - [Solution](Algorithms/Easy/212_max_num_split)
 
 ## Medium <a name="algorithms-medium"></a>
 

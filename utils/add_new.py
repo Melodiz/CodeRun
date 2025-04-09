@@ -243,14 +243,14 @@ def main():
         if re.match(r'^\d+\.', info['title']):
             title_with_num = info['title']
         else:
-            title_with_num = f"{problem_num}. {info['title']}"
+            title_with_num = f"{problem_num}. {args.problem_id}"
             
         # Clean the title for git commit message
         clean_title = title_with_num.replace('_', ' ').replace('-', ' ')
         
         # Print git command shortcut
         print("\nGit command shortcut:")
-        print(f"git add . && git commit -m \"CodeRun: {clean_title}\"")
+        print(f"git add . && git commit -m \"CodeRun: {clean_title}\" && git push origin main")
         
         return 0
     else:
