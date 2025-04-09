@@ -234,6 +234,24 @@ def main():
     
     if success:
         print(f"Successfully added problem {args.problem_id} to {args.topic_folder}")
+        
+        # Get the problem info again to format the git commit message
+        info = get_problem_info(args.problem_id)
+        problem_num = extract_problem_num(info['title'], info.get('html_content', ''))
+        
+        # Format the title for git commit message (replace underscores and hyphens with spaces)
+        if re.match(r'^\d+\.', info['title']):
+            title_with_num = info['title']
+        else:
+            title_with_num = f"{problem_num}. {info['title']}"
+            
+        # Clean the title for git commit message
+        clean_title = title_with_num.replace('_', ' ').replace('-', ' ')
+        
+        # Print git command shortcut
+        print("\nGit command shortcut:")
+        print(f"git add . && git commit -m \"CodeRun: {clean_title}\"")
+        
         return 0
     else:
         print(f"Failed to add problem {args.problem_id}")

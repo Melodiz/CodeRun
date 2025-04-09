@@ -105,4 +105,4 @@
 * [2. Самый дешевый путь](https://coderun.yandex.ru/problem/cheapest-way/) [dynamic programming] - [Solution](Algorithms/Medium/2_cheapest_way)
 * [4. Ход конём](https://coderun.yandex.ru/problem/knight-move/) [dynamic programming] - [Solution](Algorithms/Medium/4_knight_move)
 * [3. Вывести маршрут максимальной стоимости](https://coderun.yandex.ru/problem/print-the-route-of-the-maximum-cost/) [dynamic programming] - [Solution](Algorithms/Medium/3_print_the_route_of_the_maximum_cost)
-* [20. Гистограмма и прямоугольник](https://coderun.yandex.ru/problem/histogram-and-rectangle/) [linear search, stack] - [Solution](Algorithms/Medium/20_histogram_and_rectangle)
+* [20. Гистограмма и прямоугольник](https://coderun.yandex.ru/problem/histogram-and-rectangle/) [linear search, stack] - [Solution](Algorithms/Medium/20_histogram_and_rectangle)* [215. Игра с числами](https://coderun.yandex.ru/problem/num-game/) [dynamic programming, game theory] - [Solution](Medium/215_num_game)
