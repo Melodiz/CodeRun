@@ -168,6 +168,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [157. Захар и загадочные совпадения](https://coderun.yandex.ru/problem/qx-d/) [greedy, json] - [Solution](Algorithms/Easy/157_qx_d)
 * [434. Сумма](https://coderun.yandex.ru/problem/splitting-into-terms/) - [Solution](Algorithms/Easy/434_splitting_into_terms)
 * [212. Добавить минусы](https://coderun.yandex.ru/problem/max-num-split/) [implementation, brute force] - [Solution](Algorithms/Easy/212_max_num_split)
+* [251. Набор символов](https://coderun.yandex.ru/problem/symbols-set-min-susbstr/) [standard library, implementation, counting, strings] - [Solution](Algorithms/Easy/251_symbols_set_min_susbstr)
 
 ## Medium <a name="algorithms-medium"></a>
 
