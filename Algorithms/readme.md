@@ -93,6 +93,8 @@
 * [212. Добавить минусы](https://coderun.yandex.ru/problem/max-num-split/) [implementation, brute force] - [Solution](Easy/212_max_num_split)
 * [251. Набор символов](https://coderun.yandex.ru/problem/symbols-set-min-susbstr/) [standard library, implementation, counting, strings] - [Solution](Easy/251_symbols_set_min_susbstr)
 * [423. Ближайшая остановка](https://coderun.yandex.ru/problem/nearest-bus-stop/) [binary search] - [Solution](Easy/423_nearest_bus_stop)
+* [188. Весы и гири](https://coderun.yandex.ru/problem/scales-and-weights/) [brute force] - [Solution](Easy/188_scales_and_weights)
+* [188. Весы и гири](https://coderun.yandex.ru/problem/scales-and-weights/) [brute force] - [Solution](Easy/188_scales_and_weights)
 
 ## Medium <a name="algorithms-medium"></a>
 
