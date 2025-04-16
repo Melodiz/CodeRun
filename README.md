@@ -172,6 +172,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [423. Ближайшая остановка](https://coderun.yandex.ru/problem/nearest-bus-stop/) [binary search] - [Solution](Algorithms/Easy/423_nearest_bus_stop)
 * [188. Весы и гири](https://coderun.yandex.ru/problem/scales-and-weights/) [brute force] - [Solution](Algorithms/Easy/188_scales_and_weights)
 * [188. Весы и гири](https://coderun.yandex.ru/problem/scales-and-weights/) [brute force] - [Solution](Algorithms/Easy/188_scales_and_weights)
+* [316. Колода карт](https://coderun.yandex.ru/problem/cards/) [brute force] - [Solution](Algorithms/Easy/316_cards)
 
 ## Medium <a name="algorithms-medium"></a>
 
