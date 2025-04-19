@@ -174,6 +174,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [188. Весы и гири](https://coderun.yandex.ru/problem/scales-and-weights/) [brute force] - [Solution](Algorithms/Easy/188_scales_and_weights)
 * [316. Колода карт](https://coderun.yandex.ru/problem/cards/) [brute force] - [Solution](Algorithms/Easy/316_cards)
 * [60. Кубики](https://coderun.yandex.ru/problem/cubes/) [standard library, two pointers, set] - [Solution](Algorithms/Easy/60_cubes)
+* [5321. Наряжаем ёлку](https://coderun.yandex.ru/problem/decorating-tree/) - [Solution](Algorithms/Easy/5321_decorating_tree)
 
 ## Medium <a name="algorithms-medium"></a>
 
