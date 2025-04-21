@@ -98,6 +98,7 @@
 * [316. Колода карт](https://coderun.yandex.ru/problem/cards/) [brute force] - [Solution](Easy/316_cards)
 * [60. Кубики](https://coderun.yandex.ru/problem/cubes/) [standard library, two pointers, set] - [Solution](Easy/60_cubes)
 * [5321. Наряжаем ёлку](https://coderun.yandex.ru/problem/decorating-tree/) - [Solution](Easy/5321_decorating_tree)
+* [220. Нормализация показателей](https://coderun.yandex.ru/problem/normalization-of-indicators/) [binary search, sort] - [Solution](Easy/220_normalization_of_indicators)
 
 ## Medium <a name="algorithms-medium"></a>
 
