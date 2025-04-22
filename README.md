@@ -176,6 +176,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [60. Кубики](https://coderun.yandex.ru/problem/cubes/) [standard library, two pointers, set] - [Solution](Algorithms/Easy/60_cubes)
 * [5321. Наряжаем ёлку](https://coderun.yandex.ru/problem/decorating-tree/) - [Solution](Algorithms/Easy/5321_decorating_tree)
 * [220. Нормализация показателей](https://coderun.yandex.ru/problem/normalization-of-indicators/) [binary search, sort] - [Solution](Algorithms/Easy/220_normalization_of_indicators)
+* [139. Скучная лекция](https://coderun.yandex.ru/problem/boring-lecture/) [combinatorics, counting] - [Solution](Algorithms/Easy/139_boring_lecture)
 
 ## Medium <a name="algorithms-medium"></a>
 
