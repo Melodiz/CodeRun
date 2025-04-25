@@ -195,6 +195,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [20. Гистограмма и прямоугольник](https://coderun.yandex.ru/problem/histogram-and-rectangle/) [linear search, stack] - [Solution](Algorithms/Medium/20_histogram_and_rectangle)
 * [215. Игра с числами](https://coderun.yandex.ru/problem/num-game/) [dynamic programming, game theory] - [Solution](Algorithms/Medium/215_num_game)
 * [120. Высота дерева](https://coderun.yandex.ru/problem/tree-height/) [binary search tree] - [Solution](Algorithms/Medium/120_tree_height)
+* [588. Клетчатая доска](https://coderun.yandex.ru/problem/checkered-board/) [constructive] - [Solution](Algorithms/Medium/588_checkered_board)
 
 ---
 
