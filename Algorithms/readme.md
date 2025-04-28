@@ -100,6 +100,7 @@
 * [5321. Наряжаем ёлку](https://coderun.yandex.ru/problem/decorating-tree/) - [Solution](Easy/5321_decorating_tree)
 * [220. Нормализация показателей](https://coderun.yandex.ru/problem/normalization-of-indicators/) [binary search, sort] - [Solution](Easy/220_normalization_of_indicators)
 * [139. Скучная лекция](https://coderun.yandex.ru/problem/boring-lecture/) [combinatorics, counting] - [Solution](Easy/139_boring_lecture)
+* [437. Наибольший квадрат](https://coderun.yandex.ru/problem/biggest-square/) - [Solution](Easy/437_biggest_square)
 
 ## Medium <a name="algorithms-medium"></a>
 
