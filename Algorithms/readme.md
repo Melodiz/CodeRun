@@ -101,6 +101,7 @@
 * [220. Нормализация показателей](https://coderun.yandex.ru/problem/normalization-of-indicators/) [binary search, sort] - [Solution](Easy/220_normalization_of_indicators)
 * [139. Скучная лекция](https://coderun.yandex.ru/problem/boring-lecture/) [combinatorics, counting] - [Solution](Easy/139_boring_lecture)
 * [437. Наибольший квадрат](https://coderun.yandex.ru/problem/biggest-square/) - [Solution](Easy/437_biggest_square)
+* [129. Родословная: подсчет уровней](https://coderun.yandex.ru/problem/pedigree-counting-levels/) [dynamic programming, tree, dict] - [Solution](Easy/129_pedigree_counting_levels)
 
 ## Medium <a name="algorithms-medium"></a>
 
