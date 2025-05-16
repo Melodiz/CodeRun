@@ -102,6 +102,7 @@
 * [139. Скучная лекция](https://coderun.yandex.ru/problem/boring-lecture/) [combinatorics, counting] - [Solution](Easy/139_boring_lecture)
 * [437. Наибольший квадрат](https://coderun.yandex.ru/problem/biggest-square/) - [Solution](Easy/437_biggest_square)
 * [129. Родословная: подсчет уровней](https://coderun.yandex.ru/problem/pedigree-counting-levels/) [dynamic programming, tree, dict] - [Solution](Easy/129_pedigree_counting_levels)
+* [306. День недели](https://coderun.yandex.ru/problem/dayofweek-ya-intern/) [implementation] - [Solution](Easy/306_dayofweek_ya_intern)
 
 ## Medium <a name="algorithms-medium"></a>
 
