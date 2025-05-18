@@ -180,6 +180,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [437. Наибольший квадрат](https://coderun.yandex.ru/problem/biggest-square/) - [Solution](Algorithms/Easy/437_biggest_square)
 * [129. Родословная: подсчет уровней](https://coderun.yandex.ru/problem/pedigree-counting-levels/) [dynamic programming, tree, dict] - [Solution](Algorithms/Easy/129_pedigree_counting_levels)
 * [306. День недели](https://coderun.yandex.ru/problem/dayofweek-ya-intern/) [implementation] - [Solution](Algorithms/Easy/306_dayofweek_ya_intern)
+* [144. Великое Лайнландское переселение](https://coderun.yandex.ru/problem/great-lineland-migration/) [stack] - [Solution](Algorithms/Easy/144_great_lineland_migration)
 
 ## Medium <a name="algorithms-medium"></a>
 
