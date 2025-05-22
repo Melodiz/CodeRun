@@ -42,6 +42,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [314. Оптимальная константа 2.0](https://coderun.yandex.ru/problem/happiness/) [math] - [Solution](ML/Easy/314_happiness)
 * [178. Решающий пень](https://coderun.yandex.ru/problem/stump/) [math] - [Solution](ML/Easy/178_stump)
 * [556. В погоне за прибылью](https://coderun.yandex.ru/problem/in-pursuit-of-profit/) - [Solution](ML/Easy/556_in_pursuit_of_profit)
+* [562. 1984](https://coderun.yandex.ru/problem/1984/) - [Solution](ML/Easy/562_1984)
 
 ## Medium <a name="ml-medium"></a>
 
