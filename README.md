@@ -72,6 +72,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [207. Обобщённый AUC](https://coderun.yandex.ru/problem/generalized-auc) - [Solution](ML/Medium/207_generalized_auc)
 * [572. Поход в горы](https://coderun.yandex.ru/problem/mountain-trip/) [binary search] - [Solution](ML/Medium/572_mountain_trip)
 * [240. Монетки](https://coderun.yandex.ru/problem/coins/) [probability theory] - [Solution](ML/Medium/240_coins)
+* [6886. Угадай функцию](https://coderun.yandex.ru/problem/phi/) [number theory] - [Solution](ML/Medium/6886_phi)
 
 ## Hard <a name="ml-hard"></a>
 * [384. Звёздные карты 2.0](https://coderun.yandex.ru/problem/star-maps-v2/) - [Solution](ML/Hard/384_star_maps_v2)
