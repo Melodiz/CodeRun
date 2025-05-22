@@ -14,6 +14,7 @@
 * [556. В погоне за прибылью](https://coderun.yandex.ru/problem/in-pursuit-of-profit/) - [Solution](ML/Easy/556_in_pursuit_of_profit)
 * [562. 1984](https://coderun.yandex.ru/problem/1984/) - [Solution](Easy/562_1984)
 * [566. Пушистики](https://coderun.yandex.ru/problem/fuzzies/) [greedy] - [Solution](Easy/566_fuzzies)
+* [570. Лента рекомендаций](https://coderun.yandex.ru/problem/recomendation-feed/) [implementation] - [Solution](Easy/570_recomendation_feed)
 
 ## Medium <a name="ml-medium"></a>
 
