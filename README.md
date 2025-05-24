@@ -208,6 +208,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [120. Высота дерева](https://coderun.yandex.ru/problem/tree-height/) [binary search tree] - [Solution](Algorithms/Medium/120_tree_height)
 * [588. Клетчатая доска](https://coderun.yandex.ru/problem/checkered-board/) [constructive] - [Solution](Algorithms/Medium/588_checkered_board)
 * [27. Разложение в сумму кубов](https://coderun.yandex.ru/problem/sum-of-cubes/) [dynamic programming] - [Solution](Algorithms/Medium/27_sum_of_cubes)
+* [121. Глубина добавляемых элементов](https://coderun.yandex.ru/problem/depth-added-elements/) [binary search tree, sort] - [Solution](Algorithms/Medium/121_depth_added_elements)
 
 ---
 
