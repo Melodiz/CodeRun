@@ -107,6 +107,7 @@
 * [439. Пара букв](https://coderun.yandex.ru/problem/couple-of-letters/) - [Solution](Easy/439_couple_of_letters)
 * [228. Поиск чисел в массиве с определённой суммой](https://coderun.yandex.ru/problem/search-for-numbers/) [brute force, algorithms] - [Solution](Easy/228_search_for_numbers)
 * [151. Кузнечик](https://coderun.yandex.ru/problem/grasshopper/) [dynamic programming] - [Solution](Easy/151_grasshopper)
+* [360. Частый элемент](https://coderun.yandex.ru/problem/a-1-find-most-frequent/) [standard library, sort] - [Solution](Easy/360_a_1_find_most_frequent)
 
 ## Medium <a name="algorithms-medium"></a>
 
