@@ -1,21 +1,58 @@
-# Количество различных чисел
+# [Количество различных чисел](link)
 
-Problem ID: number-different-numbers
-
-URL: https://coderun.yandex.ru/problem/number-different-numbers/
-
-Tags: standard library, sort, set
+## Description
 
 Дан список чисел, который может содержать до 100000 чисел.
 Определите, сколько в нём встречается различных чисел.
-
-
-## Формат ввода
+### Input Format:
 
 Вводится список целых чисел. Все числа списка находятся на одной строке.
 
-
-## Формат вывода
+### Output Format:
 
 Выведите ответ на задачу.
+
+## Example Test Cases
+
+### Example 1
+
+**Input:**
+```
+1 2 3 2 1
+
+```
+
+**Output:**
+```
+3
+
+```
+
+### Example 2
+
+**Input:**
+```
+1 2 3 4 5 6 7 8 9 10
+
+```
+
+**Output:**
+```
+10
+
+```
+
+### Example 3
+
+**Input:**
+```
+1 2 3 4 5 1 2 1 2 7 3
+
+```
+
+**Output:**
+```
+6
+
+```
 

@@ -1,10 +1,6 @@
-# Номер появления слова
+# [Номер появления слова](link)
 
-Problem ID: word-appearance-number
-
-URL: https://coderun.yandex.ru/problem/word-appearance-number/
-
-Tags: standard library, counting, dict
+## Description
 
 Во входном файле (вы можете читать данные из файла input.txt)
 записан текст. Словом считается последовательность непробельных символов
@@ -12,14 +8,60 @@ Tags: standard library, counting, dict
 или символами конца строки.
 Для каждого слова из этого текста подсчитайте, сколько раз оно встречалось 
 в этом тексте ранее.
-
-
-## Формат ввода
+### Input Format:
 
 Вводится текст.
 
-
-## Формат вывода
+### Output Format:
 
 Выведите ответ на задачу.
+
+## Example Test Cases
+
+### Example 1
+
+**Input:**
+```
+one two one tho three
+
+
+```
+
+**Output:**
+```
+0 0 1 0 0 
+
+```
+
+### Example 2
+
+**Input:**
+```
+She sells sea shells on the sea shore;
+The shells that she sells are sea shells I'm sure.
+So if she sells sea shells on the sea shore,
+I'm sure that the shells are sea shore shells.
+
+
+```
+
+**Output:**
+```
+0 0 0 0 0 0 1 0 0 1 0 0 1 0 2 2 0 0 0 0 1 2 3 3 1 1 4 0 1 0 1 2 4 1 5 0 0 
+
+```
+
+### Example 3
+
+**Input:**
+```
+aba aba; aba @?"
+
+```
+
+**Output:**
+```
+0 0 1 0 
+
+```
 

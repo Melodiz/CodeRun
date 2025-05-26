@@ -1,16 +1,33 @@
-# Поиск чисел в массиве с определённой суммой
+# [Поиск чисел в массиве с определённой суммой](link)
 
-Problem ID: search-for-numbers
+## Description
 
-URL: https://coderun.yandex.ru/problem/search-for-numbers/
+Дан массив целых чисел и целое число k. Нужно определить, есть ли в массиве два числа, сумма которых равна k .
 
-Tags: brute force, algorithms
+**Пример:**
 
-228. Поиск чисел в массиве с определённой суммойНе решаласьЛёгкаяОграниченияОграничение времени10 сОграничение памяти64 МБТегиbrute forcealgorithms
+Вход: nums = [10, 15, 3, 7], k = 17
 
-Не решаласьЛёгкая
+Выход: True","inputFormat":null,"outputFormat":nu
+### Input Format:
 
-brute forcealgorithms
+чисел и целое число k. Нужно определить, есть ли в массиве два числа, сумма которых равна k .
 
-Нужно войти, чтобы отправить решение.Войти
+**Пример:**
+
+Вход: nums = [10, 15, 3, 7], k = 17
+
+Выход: True","inputFormat":null,"outputFormat":nu
+
+### Output Format:
+
+сло k. Нужно определить, есть ли в массиве два числа, сумма которых равна k .
+
+**Пример:**
+
+Вход: nums = [10, 15, 3, 7], k = 17
+
+Выход: True","inputFormat":null,"outputFormat":nul
+
+## Example Test Cases
 

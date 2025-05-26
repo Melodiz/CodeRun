@@ -1,23 +1,33 @@
-# Покрытие K отрезками
+# [Покрытие K отрезками](link)
 
-Problem ID: k-segments
-
-URL: https://coderun.yandex.ru/problem/k-segments/
-
-Tags: binary search
+## Description
 
 Даны $n$ точек на прямой, нужно покрыть их $k$ отрезками одинаковой длины $\ell$.
 
 Найдите минимальное $\ell$.
-
-
-## Формат ввода
+### Input Format:
 
 На первой строке $n$ ($1 \le n \le 10^5$) и $k$ ($1 \le k \le n$).
 На второй $n$ чисел $x_i$ ($|x_i| \le 10^9$).
 
-
-## Формат вывода
+### Output Format:
 
 Минимальное такое $\ell$, что точки можно покрыть $k$ отрезками длины $\ell$.
+
+## Example Test Cases
+
+### Example 1
+
+**Input:**
+```
+6 2
+1 2 3 9 8 7
+
+```
+
+**Output:**
+```
+2
+
+```
 

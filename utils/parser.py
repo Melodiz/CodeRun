@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 import re
+from featch_description import get_html_content, get_problem_readme 
 
 def is_russian_text(text):
     """
@@ -80,111 +81,50 @@ def process_tags(tags_list):
 
 def get_problem_info(problem_id):
     """
-    Scrape problem title, description, and tags from coderun.yandex.ru
+    Get problem information including HTML content for readme generation
     
     Args:
-        problem_id (str): The problem ID (e.g., 'median-out-of-three')
+        problem_id (str): The problem ID
         
     Returns:
-        dict: A dictionary containing 'title', 'description', 'tags', 'url', and 'html_content'
+        dict: Problem information including title, description, tags, URL
     """
-    url = f"https://coderun.yandex.ru/problem/{problem_id}/"
+    # Get the HTML content first
+    html_content = get_html_content(problem_id)
     
-    # Add headers to mimic a browser request
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept-Language': 'ru-RU,ru;q=0.9,en-US;q=0.8,en;q=0.7'
-    }
-    
-    try:
-        response = requests.get(url, headers=headers)
-        response.raise_for_status()  # Raise an exception for HTTP errors
-        
-        html_content = response.text
-        soup = BeautifulSoup(html_content, 'html.parser')
-        
-        # Extract title from the HTML title tag
-        title_tag = soup.title
-        title = title_tag.text.split('//')[0].strip() if title_tag else "Title not found"
-        
-        # Extract tags - look for tag elements
-        raw_tags = []
-        tag_elements = soup.find_all('div', class_=lambda c: c and ('tag' in c.lower() or 'chip' in c.lower()))
-        
-        if tag_elements:
-            for tag_elem in tag_elements:
-                tag_text = tag_elem.get_text(strip=True)
-                if tag_text and tag_text not in raw_tags:
-                    raw_tags.append(tag_text)
-        
-        # If no tags found with the above method, try another approach
-        if not raw_tags:
-            # Look for spans that might contain tags
-            span_elements = soup.find_all('span', class_=lambda c: c and ('tag' in c.lower() or 'chip' in c.lower()))
-            for span in span_elements:
-                tag_text = span.get_text(strip=True)
-                if tag_text and tag_text not in raw_tags:
-                    raw_tags.append(tag_text)
-        
-        # Process the raw tags to filter out Russian tags and split combined tags
-        tags = process_tags(raw_tags)
-        
-        # Extract description - look for the problem statement content
-        description = ""
-        
-        # Try to find the problem description in the HTML
-        # Look for specific elements that might contain the problem description
-        description_div = soup.find('div', class_='body-m')
-        
-        if description_div:
-            # Find all section elements within the description div
-            sections = description_div.find_all('section')
-            
-            for section in sections:
-                # Get section title if it exists
-                section_title = section.find('h2')
-                if section_title:
-                    description += f"\n## {section_title.text.strip()}\n\n"
-                
-                # Get all paragraphs in this section
-                paragraphs = section.find_all('p')
-                for p in paragraphs:
-                    description += f"{p.text.strip()}\n\n"
-                
-                # Get all code snippets in this section
-                code_snippets = section.find_all('pre')
-                for code in code_snippets:
-                    description += f"```\n{code.text.strip()}\n```\n\n"
-        
-        # If we couldn't extract description using the above method, try a more general approach
-        if not description:
-            # Try to find any div with class containing "description"
-            description_elements = soup.find_all('div', class_=lambda c: c and 'description' in c.lower())
-            for elem in description_elements:
-                description += elem.get_text(strip=True) + "\n\n"
-        
-        # If still no description, try to extract from the meta description
-        if not description:
-            meta_desc = soup.find('meta', attrs={'name': 'description'})
-            if meta_desc and 'content' in meta_desc.attrs:
-                description = meta_desc['content']
-        
+    if not html_content:
+        print(f"Error: Could not fetch HTML content for problem {problem_id}")
         return {
-            'title': title,
-            'description': description,
-            'tags': tags,
-            'url': url,
-            'html_content': html_content  # Include the HTML content
-        }
-    except Exception as e:
-        print(f"Error fetching problem info: {e}")
-        return {
-            'title': f"Error: {e}",
+            'title': f"Error: Could not fetch problem {problem_id}",
             'description': "",
             'tags': [],
-            'url': url,
+            'url': f"https://coderun.yandex.ru/problem/{problem_id}/",
             'html_content': ""
         }
+    
+    # Generate the readme from HTML content
+    description = get_problem_readme(html_content)
+    
+    # Extract title from the description (first line after '# ')
+    title = "Unknown Title"
+    if description.startswith("# "):
+        title = description.split("\n")[0][2:].strip()
+    
+    # Extract tags if present in the description
+    tags = []
+    for line in description.split("\n"):
+        if line.startswith("Tags:"):
+            tags_str = line[5:].strip()
+            tags = [tag.strip() for tag in tags_str.split(",")]
+            break
+    
+    return {
+        'title': title,
+        'description': description,
+        'tags': tags,
+        'url': f"https://coderun.yandex.ru/problem/{problem_id}/",
+        'html_content': html_content
+    }
 
 def extract_problem_id(folder_name):
     """

@@ -3,6 +3,7 @@ import sys
 import re
 import argparse
 from parser import get_problem_info
+from featch_description import get_html_content, get_problem_readme
 
 def extract_problem_num(title, html_content=None):
     """
@@ -45,9 +46,37 @@ def create_problem_folder(problem_id, topic_folder):
     Returns:
         bool: True if successful, False otherwise
     """
-    # Fetch problem info from CodeRun
-    print(f"Fetching problem info for {problem_id}...")
-    info = get_problem_info(problem_id)
+    # Fetch HTML content first
+    html_content = get_html_content(problem_id)
+    
+    if not html_content:
+        print(f"Error: Could not fetch HTML content for problem {problem_id}")
+        return False
+    
+    # Generate readme from HTML content
+    description = get_problem_readme(html_content)
+    
+    # Extract title from the description (first line after '# ')
+    title = "Unknown Title"
+    if description.startswith("# "):
+        title = description.split("\n")[0][2:].strip()
+    
+    # Extract tags if present in the description
+    tags = []
+    for line in description.split("\n"):
+        if line.startswith("Tags:"):
+            tags_str = line[5:].strip()
+            tags = [tag.strip() for tag in tags_str.split(",")]
+            break
+    
+    # Create info dictionary
+    info = {
+        'title': title,
+        'description': description,
+        'tags': tags,
+        'url': f"https://coderun.yandex.ru/problem/{problem_id}/",
+        'html_content': html_content
+    }
     
     if "Error" in info['title']:
         print(f"Error: Could not fetch problem info for {problem_id}")
@@ -70,11 +99,6 @@ def create_problem_folder(problem_id, topic_folder):
     # Create description.md file
     desc_path = os.path.join(folder_path, "description.md")
     with open(desc_path, 'w', encoding='utf-8') as f:
-        f.write(f"# {info['title']}\n\n")
-        f.write(f"Problem ID: {problem_id}\n\n")
-        f.write(f"URL: {info['url']}\n\n")
-        if info['tags']:
-            f.write(f"Tags: {', '.join(info['tags'])}\n\n")
         f.write(info['description'])
     
     print(f"Created description file: {desc_path}")
@@ -83,11 +107,11 @@ def create_problem_folder(problem_id, topic_folder):
     solution_path = os.path.join(folder_path, "solution.py")
     with open(solution_path, 'w', encoding='utf-8') as f:
         f.write(f"# Solution for {info['url']}\n\n")
-        f.write("def solution():\n")
+        f.write("def main():\n")
         f.write("    # Your solution here\n")
         f.write("    pass\n\n")
         f.write("if __name__ == \"__main__\":\n")
-        f.write("    solution()\n")
+        f.write("    main()\n")
     
     print(f"Created solution file: {solution_path}")
     
