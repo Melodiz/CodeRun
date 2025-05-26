@@ -3,6 +3,8 @@
 **/*.npy
 **/.DS_Store
 
+**archive**
+
 # not solved tasks (but attempted)
 ML/Medium/572_mountain_trip/
 ML/Medium/569_pupurum_planet/

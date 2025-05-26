@@ -111,6 +111,7 @@
 * [150. Три единицы подряд](https://coderun.yandex.ru/problem/three-blocks-row/) [dynamic programming] - [Solution](Easy/150_three_blocks_row)
 * [381. Форматирование календаря](https://coderun.yandex.ru/problem/calendar-formatting/) - [Solution](Easy/381_calendar_formatting)
 * [543. Классы подобия треугольников](https://coderun.yandex.ru/problem/triangle-similarity/) - [Solution](Easy/543_triangle_similarity)
+* [446. [Шифр](link)](https://coderun.yandex.ru/problem/q1-c-text/) - [Solution](Easy/446_q1_c_text)
 
 ## Medium <a name="algorithms-medium"></a>
 
@@ -126,7 +127,8 @@
 * [2. Самый дешевый путь](https://coderun.yandex.ru/problem/cheapest-way/) [dynamic programming] - [Solution](Medium/2_cheapest_way)
 * [4. Ход конём](https://coderun.yandex.ru/problem/knight-move/) [dynamic programming] - [Solution](Medium/4_knight_move)
 * [3. Вывести маршрут максимальной стоимости](https://coderun.yandex.ru/problem/print-the-route-of-the-maximum-cost/) [dynamic programming] - [Solution](Medium/3_print_the_route_of_the_maximum_cost)
-* [20. Гистограмма и прямоугольник](https://coderun.yandex.ru/problem/histogram-and-rectangle/) [linear search, stack] - [Solution](Medium/20_histogram_and_rectangle)* [215. Игра с числами](https://coderun.yandex.ru/problem/num-game/) [dynamic programming, game theory] - [Solution](Medium/215_num_game)
+* [20. Гистограмма и прямоугольник](https://coderun.yandex.ru/problem/histogram-and-rectangle/) [linear search, stack] - [Solution](Medium/20_histogram_and_rectangle)
+* [215. Игра с числами](https://coderun.yandex.ru/problem/num-game/) [dynamic programming, game theory] - [Solution](Medium/215_num_game)
 * [120. Высота дерева](https://coderun.yandex.ru/problem/tree-height/) [binary search tree] - [Solution](Medium/120_tree_height)
 * [588. Клетчатая доска](https://coderun.yandex.ru/problem/checkered-board/) [constructive] - [Solution](Medium/588_checkered_board)
 * [27. Разложение в сумму кубов](https://coderun.yandex.ru/problem/sum-of-cubes/) [dynamic programming] - [Solution](Medium/27_sum_of_cubes)
