@@ -97,7 +97,7 @@ def create_problem_folder(problem_id, topic_folder):
         print(f"Folder already exists: {folder_path}")
     
     # Create description.md file
-    desc_path = os.path.join(folder_path, "description.md")
+    desc_path = os.path.join(folder_path, "readme.md")
     with open(desc_path, 'w', encoding='utf-8') as f:
         f.write(info['description'])
     
