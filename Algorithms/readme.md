@@ -110,6 +110,7 @@
 * [360. Частый элемент](https://coderun.yandex.ru/problem/a-1-find-most-frequent/) [standard library, sort] - [Solution](Easy/360_a_1_find_most_frequent)
 * [150. Три единицы подряд](https://coderun.yandex.ru/problem/three-blocks-row/) [dynamic programming] - [Solution](Easy/150_three_blocks_row)
 * [381. Форматирование календаря](https://coderun.yandex.ru/problem/calendar-formatting/) - [Solution](Easy/381_calendar_formatting)
+* [543. Классы подобия треугольников](https://coderun.yandex.ru/problem/triangle-similarity/) - [Solution](Easy/543_triangle_similarity)
 
 ## Medium <a name="algorithms-medium"></a>
 

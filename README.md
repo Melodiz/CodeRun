@@ -188,6 +188,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [144. Великое Лайнландское переселение](https://coderun.yandex.ru/problem/great-lineland-migration/) [stack] - [Solution](Algorithms/Easy/144_great_lineland_migration)
 * [439. Пара букв](https://coderun.yandex.ru/problem/couple-of-letters/) - [Solution](Algorithms/Easy/439_couple_of_letters)
 * [228. Поиск чисел в массиве с определённой суммой](https://coderun.yandex.ru/problem/search-for-numbers/) [brute force, algorithms] - [Solution](Algorithms/Easy/228_search_for_numbers)
+* [543. Классы подобия треугольников](https://coderun.yandex.ru/problem/triangle-similarity/) - [Solution](Algorithms/Easy/543_triangle_similarity)
 
 ## Medium <a name="algorithms-medium"></a>
 
