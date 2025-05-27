@@ -113,6 +113,7 @@
 * [543. Классы подобия треугольников](https://coderun.yandex.ru/problem/triangle-similarity/) - [Solution](Easy/543_triangle_similarity)
 * [446. [Шифр](link)](https://coderun.yandex.ru/problem/q1-c-text/) - [Solution](Easy/446_q1_c_text)
 * [869. [Ещё одна задача на теорию чисел](link)](https://coderun.yandex.ru/problem/gcd-and-lcm/) - [Solution](Easy/869_gcd_and_lcm)
+* [287. Разные цифры](https://coderun.yandex.ru/problem/three-numbers/) [brute force, bitwise operation] - [Solution](Easy/287_three_numbers)
 
 ## Medium <a name="algorithms-medium"></a>
 

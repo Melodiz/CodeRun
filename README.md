@@ -189,8 +189,9 @@ In the future, I may add hints and other personal notes. Good luck!
 * [439. Пара букв](https://coderun.yandex.ru/problem/couple-of-letters/) - [Solution](Algorithms/Easy/439_couple_of_letters)
 * [228. Поиск чисел в массиве с определённой суммой](https://coderun.yandex.ru/problem/search-for-numbers/) [brute force, algorithms] - [Solution](Algorithms/Easy/228_search_for_numbers)
 * [543. Классы подобия треугольников](https://coderun.yandex.ru/problem/triangle-similarity/) - [Solution](Algorithms/Easy/543_triangle_similarity)
-* [446. [Шифр](link)](https://coderun.yandex.ru/problem/q1-c-text/) - [Solution](Algorithms/Easy/446_q1_c_text)
-* [869. [Ещё одна задача на теорию чисел](link)](https://coderun.yandex.ru/problem/gcd-and-lcm/) - [Solution](Algorithms/Easy/869_gcd_and_lcm)
+* [446. Шифр](https://coderun.yandex.ru/problem/q1-c-text/) - [Solution](Algorithms/Easy/446_q1_c_text)
+* [869. Ещё одна задача на теорию чисел](https://coderun.yandex.ru/problem/gcd-and-lcm/) - [Solution](Algorithms/Easy/869_gcd_and_lcm)
+* [287. Разные цифры](https://coderun.yandex.ru/problem/three-numbers/) [brute force, bitwise operation] - [Solution](Algorithms/Easy/287_three_numbers)
 
 ## Medium <a name="algorithms-medium"></a>
 
