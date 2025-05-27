@@ -1,10 +1,11 @@
-import os
+# import os
 import requests
-from bs4 import BeautifulSoup
-import json
-import time
+# from bs4 import BeautifulSoup
+# import json
+# import time
 import re
 import codecs
+import sys
 
 def get_html_content(problem_id):
     url = f"https://coderun.yandex.ru/problem/{problem_id}/"
@@ -60,6 +61,18 @@ def process_test_block(test_block_text):
         }
     
 
+def get_problem_number(html_content):
+    if not html_content:
+        print('Empty HTML content was provided to get_problem_number')
+        sys.exit(1)
+    indx = html_content.find('"number":') + len('"number":')
+    problem_number = html_content[indx:].split(',')[0]
+    if 1<= len(problem_number) < 10 and problem_number.isdigit():
+        return problem_number.split(',')[0]
+    else: 
+        print('Could not find a valid problem number')
+        sys.exit(1)
+
 def split_legend(legend_data):
     pre_start = 0
     pre_end = legend_data.find('","inputFormat":"')
@@ -81,6 +94,9 @@ def get_problem_readme(html_content):
         html_content (dict): Dictionary containing HTML content
     """
     data = html_content
+    if not data: 
+        print('Empty HTML content was provided to get_problem_readme')
+        sys.exit(1)
     
     # Extract title
     title_start = data.find('<title>') + len('<title>')
@@ -89,6 +105,7 @@ def get_problem_readme(html_content):
         if data[i:i+2] == '//': 
             title = data[title_start:i].strip()
             break
+    title_num = get_problem_number(data)
     
     # Extract legend/description
     legend_start = data.find("legend") + 9
@@ -105,7 +122,7 @@ def get_problem_readme(html_content):
     
     # Build the result markdown
     link = get_link_from_html(html_content)
-    result = f"# [{title}]({'link'})\n\n"
+    result = f"# [{title_num}. {title}]({'link'})\n\n"
     result += f"## Description\n\n{legend_data}\n\n"
     result += "## Example Test Cases\n\n"
     
@@ -128,34 +145,6 @@ def get_link_from_html(html_content):
         
 
 if __name__ == "__main__":
-    # replace previous (not complete) files
-    base_dir = 'ML/Hard'
-    # list all folder in that directory
-    for dir_name in os.listdir(base_dir):
-        full_path = os.path.join(base_dir, dir_name)
-        problem_id  = dir_name[dir_name.find('_') + 1:].replace('_', '-')
-        html = get_html_content(problem_id)
-        if html:
-            readme = get_problem_readme(html)
-            file_path = os.path.join(full_path, 'description.md')
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(readme)
-            print(f"Created README.md for {dir_name}")
-        else:
-            print(f"Failed to fetch problem info for {full_path}")
-
-    # MANUAL MODE
-    # id = 'book-shelf'
-    # base_dir = 'autumn_intern_23/'
-    # dir_name = "404_book_shelf"
-    # full_path = os.path.join(base_dir, dir_name)
-    # problem_id = id
-    # html = get_html_content(problem_id)
-    # if html:
-    #     readme = get_problem_readme(html)
-    #     file_path = os.path.join(full_path, 'description.md')
-    #     with open(file_path, 'w', encoding='utf-8') as f:
-    #         f.write(readme)
-    #     print(f"Created README.md for {dir_name}")
-    # else:
-    #     print(f"Failed to fetch problem info for {full_path}")
+    problem_id = 'three-numbers'
+    html_content = get_html_content(problem_id)
+    print(get_problem_number(html_content))

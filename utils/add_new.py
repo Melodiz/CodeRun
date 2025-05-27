@@ -3,37 +3,8 @@ import sys
 import re
 import argparse
 from parser import get_problem_info
-from featch_description import get_html_content, get_problem_readme
-
-def extract_problem_num(title, html_content=None):
-    """
-    Extract problem number from the title or HTML content
-    
-    Args:
-        title (str): Problem title
-        html_content (str): HTML content of the problem page
-        
-    Returns:
-        str: Problem number (e.g., '404', '123')
-    """
-    # Try to find a number at the beginning of the title
-    match = re.search(r'^(\d+)\.', title)
-    if match:
-        return match.group(1)
-    
-    # If HTML content is provided, try to find the number in the HTML
-    if html_content:
-        # Look for patterns like "101. Поиск цикла" where "Поиск цикла" is the title
-        clean_title = re.escape(title.strip())
-        pattern = r'(\d+)\.\s*' + clean_title
-        match = re.search(pattern, html_content)
-        if match:
-            return match.group(1)
-    
-    # If not found, generate a random number (for testing purposes)
-    import random
-    print("Failed to extract problem number. Generating random number for testing... 100-999...")
-    return str(random.randint(100, 999))
+from featch_description import get_html_content, get_problem_readme, get_problem_number
+from parser import get_tags
 
 def create_problem_folder(problem_id, topic_folder):
     """
@@ -48,26 +19,19 @@ def create_problem_folder(problem_id, topic_folder):
     """
     # Fetch HTML content first
     html_content = get_html_content(problem_id)
-    
     if not html_content:
         print(f"Error: Could not fetch HTML content for problem {problem_id}")
         return False
     
     # Generate readme from HTML content
     description = get_problem_readme(html_content)
-    
     # Extract title from the description (first line after '# ')
     title = "Unknown Title"
     if description.startswith("# "):
-        title = description.split("\n")[0][2:].strip()
+        title = description.split("\n")[0].split('.')[1].split(']')[0].strip()
     
     # Extract tags if present in the description
-    tags = []
-    for line in description.split("\n"):
-        if line.startswith("Tags:"):
-            tags_str = line[5:].strip()
-            tags = [tag.strip() for tag in tags_str.split(",")]
-            break
+    tags = get_tags(html_content)
     
     # Create info dictionary
     info = {
@@ -81,9 +45,8 @@ def create_problem_folder(problem_id, topic_folder):
     if "Error" in info['title']:
         print(f"Error: Could not fetch problem info for {problem_id}")
         return False
-    
     # Extract problem number from title and HTML content
-    problem_num = extract_problem_num(info['title'], info.get('html_content', ''))
+    problem_num = get_problem_number(html_content)
     
     # Create folder name: problem_num_problem_id
     folder_name = f"{problem_num}_{problem_id.replace('-', '_')}"
@@ -252,16 +215,14 @@ def main():
     if not os.path.exists(args.topic_folder):
         print(f"Error: Topic folder '{args.topic_folder}' does not exist")
         return 1
-    
     # Create the problem folder and files
     success = create_problem_folder(args.problem_id, args.topic_folder)
-    
     if success:
         print(f"Successfully added problem {args.problem_id} to {args.topic_folder}")
         
         # Get the problem info again to format the git commit message
         info = get_problem_info(args.problem_id)
-        problem_num = extract_problem_num(info['title'], info.get('html_content', ''))
+        problem_num = get_problem_number(info['html_content'])
         
         # Format the title for git commit message (replace underscores and hyphens with spaces)
         if re.match(r'^\d+\.', info['title']):

@@ -5,6 +5,8 @@ import json
 import time
 import re
 from featch_description import get_html_content, get_problem_readme 
+import sys
+
 
 def is_russian_text(text):
     """
@@ -19,65 +21,14 @@ def is_russian_text(text):
     # Russian Unicode range: 0x0400-0x04FF
     return bool(re.search('[\u0400-\u04FF]', text))
 
-def process_tags(tags_list):
-    """
-    Process tags list:
-    1. Remove Russian tags
-    2. Split combined tags (e.g., "binary search treedynamic programming")
-    
-    Args:
-        tags_list (list): List of raw tags
-        
-    Returns:
-        list: Processed tags list
-    """
-    # Complete set of known tags
-    known_tags = {
-        "ad hoc", "advanced js", "algorithms", "asynchrony", "bfs", "binary search", 
-        "binary search tree", "bitwise operation", "browser", "brute force", "closure", 
-        "code handling", "combinatorics", "constructive", "counting", "crypto", "css", 
-        "data structures", "debugging", "deque", "dfs", "dict", "dynamic programming", 
-        "dynamic programming 1D", "dynamic programming 2D", "find bugs in the code", 
-        "game theory", "geometry", "graph theory", "greedy", "gustokashin", "heap", 
-        "http", "implementation", "infrastructure", "intervals intersection", "json", 
-        "line handling", "linear search", "machine learing", "math", "number theory", 
-        "parsing", "prefix sum", "probabilty theory", "queque", "react", "regular expressions", 
-        "scanline", "set", "sliding window", "sort", "sql", "stack", "standard library", 
-        "statistics", "std", "strings", "topsort", "tree", "two pass", "two pointers", 
-        "verstka", "web api", "work with DOM"
-    }
-    
-    processed_tags = []
-    
-    for tag in tags_list:
-        # Skip Russian tags
-        if is_russian_text(tag):
-            continue
-        
-        # Convert to lowercase for better matching
-        tag_lower = tag.lower()
-        
-        # Check if this is a combined tag that needs splitting
-        found_tags = []
-        
-        # Try to find known tags within this tag
-        for known_tag in sorted(known_tags, key=len, reverse=True):
-            if known_tag in tag_lower:
-                found_tags.append(known_tag)
-                # Remove the found tag to avoid overlapping matches
-                tag_lower = tag_lower.replace(known_tag, " " * len(known_tag))
-        
-        # If we found known tags, add them
-        if found_tags:
-            for found_tag in found_tags:
-                if found_tag not in processed_tags:
-                    processed_tags.append(found_tag)
-        # Otherwise, add the original tag if it's not too long (likely not a combined tag)
-        elif len(tag) < 30 and not is_russian_text(tag):
-            if tag.lower() not in processed_tags:
-                processed_tags.append(tag.lower())
-    
-    return processed_tags
+def get_tags(html_content):
+    if not html_content:
+        print("Empty HTML content was provided to get_tags")
+        sys.exit(1)
+    data = html_content[html_content.find('"tags":') + len('"tags":') + 1:]
+    data = data[:data.find(']')].strip()
+    tags = data.split(",")
+    return [tag[1:-1] for tag in tags] # remove leading and trailing quotes
 
 def get_problem_info(problem_id):
     """
@@ -111,12 +62,7 @@ def get_problem_info(problem_id):
         title = description.split("\n")[0][2:].strip()
     
     # Extract tags if present in the description
-    tags = []
-    for line in description.split("\n"):
-        if line.startswith("Tags:"):
-            tags_str = line[5:].strip()
-            tags = [tag.strip() for tag in tags_str.split(",")]
-            break
+    tags = get_tags(html_content)
     
     return {
         'title': title,
