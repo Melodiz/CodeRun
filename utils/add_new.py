@@ -1,246 +1,48 @@
+import argparse
+from check_utils import check_topic_id, validate_html_content
+from fetch_parse import get_html_content, extract_problem_data
+from other_utils import create_solution_files, update_global_readme, update_local_readme
 import os
 import sys
-import re
-import argparse
-from parser import get_problem_info
-from featch_description import get_html_content, get_problem_readme, get_problem_number
-from parser import get_tags
 
-def create_problem_folder(problem_id, topic_folder):
-    """
-    Create a new problem folder with description and solution files
-    
-    Args:
-        problem_id (str): Problem ID from CodeRun (e.g., 'book-shelf')
-        topic_folder (str): Target folder (e.g., 'ML/Easy')
-        
-    Returns:
-        bool: True if successful, False otherwise
-    """
-    # Fetch HTML content first
-    html_content = get_html_content(problem_id)
-    if not html_content:
-        print(f"Error: Could not fetch HTML content for problem {problem_id}")
-        return False
-    
-    # Generate readme from HTML content
-    description = get_problem_readme(html_content)
-    # Extract title from the description (first line after '# ')
-    title = "Unknown Title"
-    if description.startswith("# "):
-        title = description.split("\n")[0].split('.')[1].split(']')[0].strip()
-    
-    # Extract tags if present in the description
-    tags = get_tags(html_content)
-    
-    # Create info dictionary
-    info = {
-        'title': title,
-        'description': description,
-        'tags': tags,
-        'url': f"https://coderun.yandex.ru/problem/{problem_id}/",
-        'html_content': html_content
-    }
-    
-    if "Error" in info['title']:
-        print(f"Error: Could not fetch problem info for {problem_id}")
-        return False
-    # Extract problem number from title and HTML content
-    problem_num = get_problem_number(html_content)
-    
-    # Create folder name: problem_num_problem_id
-    folder_name = f"{problem_num}_{problem_id.replace('-', '_')}"
-    folder_path = os.path.join(topic_folder, folder_name)
-    
-    # Create the folder if it doesn't exist
-    if not os.path.exists(folder_path):
-        os.makedirs(folder_path)
-        print(f"Created folder: {folder_path}")
-    else:
-        print(f"Folder already exists: {folder_path}")
-    
-    # Create description.md file
-    desc_path = os.path.join(folder_path, "readme.md")
-    with open(desc_path, 'w', encoding='utf-8') as f:
-        f.write(info['description'])
-    
-    print(f"Created description file: {desc_path}")
-    
-    # Create empty solution file
-    solution_path = os.path.join(folder_path, "solution.py")
-    with open(solution_path, 'w', encoding='utf-8') as f:
-        f.write(f"# Solution for {info['url']}\n\n")
-        f.write("def main():\n")
-        f.write("    # Your solution here\n")
-        f.write("    pass\n\n")
-        f.write("if __name__ == \"__main__\":\n")
-        f.write("    main()\n")
-    
-    print(f"Created solution file: {solution_path}")
-    
-    # Update README.md
-    update_readme(info, problem_id, topic_folder, folder_name)
-    
-    return True
-def update_readme(info, problem_id, topic_folder, folder_name):
-    """
-    Update the main README.md file with the new problem
-    
-    Args:
-        info (dict): Problem information
-        problem_id (str): Problem ID
-        topic_folder (str): Target folder
-        folder_name (str): Created folder name
-    """
+
+def main():
+    # parse command-line arguments
+    arg_parser = argparse.ArgumentParser(description='Add a new CodeRun problem to the repository')
+    arg_parser.add_argument('topic_folder', help='Target folder (e.g., ML/Easy)')
+    arg_parser.add_argument('problem_id', help='Problem ID from CodeRun (e.g., book-shelf)')
+
+    args = arg_parser.parse_args()
+    check_topic_id(args.topic_folder) # will terminate the program if the folder does not exist
+
+    html_content = get_html_content(args.problem_id)
+    validate_html_content(html_content) # will terminate the program if the HTML content is empty
+
+    print(f"OK: fetched HTML content for problem {args.problem_id}")
+    problem_data = extract_problem_data(html_content, args.problem_id)
+
+    # create a corresponding Folder with description and solution template file
+    create_solution_files(args.problem_id, args.topic_folder, problem_data)
+
+
     # Update main README.md
-    main_readme_path = os.path.join(os.getcwd(), "README.md")
-    update_specific_readme(main_readme_path, info, problem_id, topic_folder, folder_name)
+    main_readme_path = os.path.join(os.getcwd(), "README.md") 
+    update_global_readme(main_readme_path, args.problem_id, args.topic_folder, problem_data)
     
     # Update local readme.md
-    topic_parts = topic_folder.split('/')
-    main_category = topic_parts[0]  # 'ML', 'Algorithms', etc.
-    local_readme_path = os.path.join(os.getcwd(), main_category, "readme.md")
-    
-    if os.path.exists(local_readme_path):
-        update_specific_readme(local_readme_path, info, problem_id, topic_folder, folder_name, is_local=True)
-    else:
-        print(f"Warning: Local readme.md not found at {local_readme_path}")
+    local_readme_path = os.path.join(os.getcwd(), args.topic_folder.split('/')[0], "readme.md")
+    update_local_readme(local_readme_path, args.problem_id, args.topic_folder, problem_data)
 
-def update_specific_readme(readme_path, info, problem_id, topic_folder, folder_name, is_local=False):
-    """
-    Update a specific README.md file with the new problem
-    
-    Args:
-        readme_path (str): Path to the README.md file
-        info (dict): Problem information
-        problem_id (str): Problem ID
-        topic_folder (str): Target folder
-        folder_name (str): Created folder name
-        is_local (bool): Whether this is a local readme (affects path in entry)
-    """
-    if not os.path.exists(readme_path):
-        print(f"Warning: README file not found at {readme_path}")
-        return
-    
-    # Read the current README content
-    with open(readme_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-    
-    # Determine which section to update based on topic_folder
-    topic_parts = topic_folder.split('/')
-    main_category = topic_parts[0]  # 'ML', 'Algorithms', etc.
-    difficulty = topic_parts[1] if len(topic_parts) > 1 else ""  # 'Easy', 'Medium', etc.
-    
-    # Find the appropriate section in the README
-    section_marker = f"## {difficulty} <a name=\"{main_category.lower()}-{difficulty.lower()}\"></a>"
-    
-    # For local readme, the section marker might be different
-    if is_local:
-        section_marker = f"## {difficulty}"
-    
-    if section_marker not in content:
-        print(f"Warning: Section {section_marker} not found in {readme_path}")
-        return
-    
-    # Extract problem number from folder name
-    problem_num = folder_name.split('_')[0]
-    
-    # Create the new entry line with problem number in the title
-    # Check if the title already starts with the problem number
-    if re.match(r'^\d+\.', info['title']):
-        title_with_num = info['title']
-    else:
-        title_with_num = f"{problem_num}. {info['title']}"
-    
-    tags_str = f" [{', '.join(info['tags'])}]" if info['tags'] else ""
-    
-    # Adjust the solution path based on whether this is a local readme
-    if is_local:
-        # For local readme, use relative path from the category folder
-        solution_path = f"{difficulty}/{folder_name}"
-    else:
-        # For main readme, use the full path
-        solution_path = f"{topic_folder}/{folder_name}"
-    
-    new_entry = f"* [{title_with_num}]({info['url']}){tags_str} - [Solution]({solution_path})\n"
-    
-    # Find the position to insert the new entry
-    section_pos = content.find(section_marker)
-    next_section_pos = content.find("##", section_pos + len(section_marker))
-    
-    if next_section_pos == -1:
-        # If this is the last section, find the next major section
-        next_section_pos = content.find("# ", section_pos + len(section_marker))
-    
-    if next_section_pos == -1:
-        # If still not found, append to the end
-        insert_pos = len(content)
-    else:
-        # Insert before the next section
-        insert_pos = next_section_pos
-    
-    # Find the last entry in the current section
-    section_content = content[section_pos:insert_pos]
-    last_entry_pos = section_content.rfind("* [")
-    
-    if last_entry_pos == -1:
-        # No entries yet, add after the section marker
-        new_content = content[:section_pos + len(section_marker)] + "\n\n" + new_entry + content[section_pos + len(section_marker):]
-    else:
-        # Add after the last entry
-        absolute_pos = section_pos + last_entry_pos
-        line_end = content.find("\n", absolute_pos)
-        if line_end == -1:
-            line_end = len(content)
-        
-        new_content = content[:line_end + 1] + new_entry + content[line_end + 1:]
-    
-    # Write the updated content back to README.md
-    with open(readme_path, 'w', encoding='utf-8') as f:
-        f.write(new_content)
-    
-    readme_type = "local" if is_local else "main"
-    print(f"Updated {readme_type} README with new problem entry: {title_with_num}")
-def main():
-    """
-    Main function to parse command line arguments and create a new problem
-    """
-    parser = argparse.ArgumentParser(description='Add a new CodeRun problem to the repository')
-    parser.add_argument('topic_folder', help='Target folder (e.g., ML/Easy)')
-    parser.add_argument('problem_id', help='Problem ID from CodeRun (e.g., book-shelf)')
-    
-    args = parser.parse_args()
-    
-    # Validate topic_folder
-    if not os.path.exists(args.topic_folder):
-        print(f"Error: Topic folder '{args.topic_folder}' does not exist")
-        return 1
-    # Create the problem folder and files
-    success = create_problem_folder(args.problem_id, args.topic_folder)
-    if success:
-        print(f"Successfully added problem {args.problem_id} to {args.topic_folder}")
-        
-        # Get the problem info again to format the git commit message
-        info = get_problem_info(args.problem_id)
-        problem_num = get_problem_number(info['html_content'])
-        
-        # Format the title for git commit message (replace underscores and hyphens with spaces)
-        if re.match(r'^\d+\.', info['title']):
-            title_with_num = info['title']
-        else:
-            title_with_num = f"{problem_num}. {args.problem_id}"
-            
-        # Clean the title for git commit message
-        clean_title = title_with_num.replace('_', ' ').replace('-', ' ')
-        
-        # Print git command shortcut
-        print("\nGit command shortcut:")
-        print(f"git add . && git commit -m \"CodeRun: {clean_title}\" && git push origin main")
-        
-        return 0
-    else:
-        print(f"Failed to add problem {args.problem_id}")
-        return 1
+    # Clean the title for the commit message
+    title_with_num = f"{problem_data['title_num']}. {problem_data['title']}"
+    clean_title = title_with_num.replace('_', ' ').replace('-', ' ')
+    print("\n Git command shortcut:")
+    print(f"git add . && git commit -m \"CodeRun: {clean_title}\" && git push origin main")
+
+    return 0
 
 if __name__ == "__main__":
     sys.exit(main())
+
+
+
