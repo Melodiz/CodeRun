@@ -114,6 +114,7 @@
 * [446. [Шифр](link)](https://coderun.yandex.ru/problem/q1-c-text/) - [Solution](Easy/446_q1_c_text)
 * [869. [Ещё одна задача на теорию чисел](link)](https://coderun.yandex.ru/problem/gcd-and-lcm/) - [Solution](Easy/869_gcd_and_lcm)
 * [287. Разные цифры](https://coderun.yandex.ru/problem/three-numbers/) [brute force, bitwise operation] - [Solution](Easy/287_three_numbers)
+* [5204. Умножай и транспонируй!](https://coderun.yandex.ru/problem/matrix-operations) - [Solution](Algorithms/Easy/5204_matrix_operations)
 
 ## Medium <a name="algorithms-medium"></a>
 

@@ -34,7 +34,7 @@ def main():
     update_local_readme(local_readme_path, args.problem_id, args.topic_folder, problem_data)
 
     # Clean the title for the commit message
-    title_with_num = f"{problem_data['title_num']}. {problem_data['title']}"
+    title_with_num = f"{problem_data['title_num']}. {args.problem_id}"
     clean_title = title_with_num.replace('_', ' ').replace('-', ' ')
     print("\n Git command shortcut:")
     print(f"git add . && git commit -m \"CodeRun: {clean_title}\" && git push origin main")
