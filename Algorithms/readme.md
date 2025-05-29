@@ -116,6 +116,7 @@
 * [287. Разные цифры](https://coderun.yandex.ru/problem/three-numbers/) [brute force, bitwise operation] - [Solution](Easy/287_three_numbers)
 * [5204. Умножай и транспонируй!](https://coderun.yandex.ru/problem/matrix-operations) - [Solution](Algorithms/Easy/5204_matrix_operations)
 * [374. Оценка](https://coderun.yandex.ru/problem/mark) - [Solution](Algorithms/Easy/374_mark)
+* [272. Простая подсказка](https://coderun.yandex.ru/problem/simple-suggest) [standard library, counting, strings] - [Solution](Algorithms/Easy/272_simple_suggest)
 
 ## Medium <a name="algorithms-medium"></a>
 
