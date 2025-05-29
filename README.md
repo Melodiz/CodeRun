@@ -196,6 +196,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [374. Оценка](https://coderun.yandex.ru/problem/mark) - [Solution](Algorithms/Easy/374_mark)
 * [272. Простая подсказка](https://coderun.yandex.ru/problem/simple-suggest) [standard library, counting, strings] - [Solution](Algorithms/Easy/272_simple_suggest)
 * [294. Сумма различных](https://coderun.yandex.ru/problem/summ-of-the-various) [data structures, std] - [Solution](Algorithms/Easy/294_summ_of_the_various)
+* [308. Билеты в кино](https://coderun.yandex.ru/problem/movie-tickets) [graph theory] - [Solution](Algorithms/Easy/308_movie_tickets)
 
 ## Medium <a name="algorithms-medium"></a>
 
