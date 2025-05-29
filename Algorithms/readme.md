@@ -117,6 +117,7 @@
 * [5204. Умножай и транспонируй!](https://coderun.yandex.ru/problem/matrix-operations) - [Solution](Algorithms/Easy/5204_matrix_operations)
 * [374. Оценка](https://coderun.yandex.ru/problem/mark) - [Solution](Algorithms/Easy/374_mark)
 * [272. Простая подсказка](https://coderun.yandex.ru/problem/simple-suggest) [standard library, counting, strings] - [Solution](Algorithms/Easy/272_simple_suggest)
+* [294. Сумма различных](https://coderun.yandex.ru/problem/summ-of-the-various) [data structures, std] - [Solution](Algorithms/Easy/294_summ_of_the_various)
 
 ## Medium <a name="algorithms-medium"></a>
 
