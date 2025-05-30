@@ -202,6 +202,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [124. Вывод листьев](https://coderun.yandex.ru/problem/leaf-conclusion) [binary search tree] - [Solution](Algorithms/Easy/124_leaf_conclusion)
 * [125. Вывод развилок](https://coderun.yandex.ru/problem/fork-conclusion) [binary search tree] - [Solution](Algorithms/Easy/125_fork_conclusion)
 * [126. Вывод веток](https://coderun.yandex.ru/problem/branches-conclusion) [binary search tree] - [Solution](Algorithms/Easy/126_branches_conclusion)
+* [138. Сумма в прямоугольнике](https://coderun.yandex.ru/problem/rectangle-sum) [prefix sum] - [Solution](Algorithms/Easy/138_rectangle_sum)
 
 ## Medium <a name="algorithms-medium"></a>
 
