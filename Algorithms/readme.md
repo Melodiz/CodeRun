@@ -126,6 +126,7 @@
 * [126. Вывод веток](https://coderun.yandex.ru/problem/branches-conclusion) [binary search tree] - [Solution](Algorithms/Easy/126_branches_conclusion)
 * [138. Сумма в прямоугольнике](https://coderun.yandex.ru/problem/rectangle-sum) [prefix sum] - [Solution](Algorithms/Easy/138_rectangle_sum)
 * [146. Игра в пьяницу](https://coderun.yandex.ru/problem/drunkard-game) [queue] - [Solution](Algorithms/Easy/146_drunkard_game)
+* [34. Космический мусорщик](https://coderun.yandex.ru/problem/space-scavenger) [dynamic programming 2D] - [Solution](Algorithms/Easy/34_space_scavenger)
 
 ## Medium <a name="algorithms-medium"></a>
 
