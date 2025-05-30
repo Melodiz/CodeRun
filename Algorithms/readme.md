@@ -128,6 +128,7 @@
 * [146. Игра в пьяницу](https://coderun.yandex.ru/problem/drunkard-game) [queue] - [Solution](Algorithms/Easy/146_drunkard_game)
 * [34. Космический мусорщик](https://coderun.yandex.ru/problem/space-scavenger) [dynamic programming 2D] - [Solution](Algorithms/Easy/34_space_scavenger)
 * [35. Движение по полосам](https://coderun.yandex.ru/problem/traffic-lanes) [dynamic programming 2D] - [Solution](Algorithms/Easy/35_traffic_lanes)
+* [88. Контрольная по ударениям](https://coderun.yandex.ru/problem/control-accent) [line handling, standard library, dict] - [Solution](Algorithms/Easy/88_control_accent)
 
 ## Medium <a name="algorithms-medium"></a>
 
