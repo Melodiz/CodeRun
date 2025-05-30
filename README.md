@@ -198,6 +198,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [294. Сумма различных](https://coderun.yandex.ru/problem/summ-of-the-various) [data structures, std] - [Solution](Algorithms/Easy/294_summ_of_the_various)
 * [308. Билеты в кино](https://coderun.yandex.ru/problem/movie-tickets) [graph theory] - [Solution](Algorithms/Easy/308_movie_tickets)
 * [148. Хипуй](https://coderun.yandex.ru/problem/hipuy) [heap] - [Solution](Algorithms/Easy/148_hipuy)
+* [28. НВП с восстановлением ответа](https://coderun.yandex.ru/problem/nvp-with-response-recovery) [dynamic programming 1D] - [Solution](Algorithms/Easy/28_nvp_with_response_recovery)
 
 ## Medium <a name="algorithms-medium"></a>
 
