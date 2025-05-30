@@ -208,6 +208,8 @@ In the future, I may add hints and other personal notes. Good luck!
 * [35. Движение по полосам](https://coderun.yandex.ru/problem/traffic-lanes) [dynamic programming 2D] - [Solution](Algorithms/Easy/35_traffic_lanes)
 * [88. Контрольная по ударениям](https://coderun.yandex.ru/problem/control-accent) [line handling, standard library, dict] - [Solution](Algorithms/Easy/88_control_accent)
 * [143. Сортировка вагонов lite](https://coderun.yandex.ru/problem/sorting-of-wagons-lite) [stack] - [Solution](Algorithms/Easy/143_sorting_of_wagons_lite)
+* [175. Уникальные пользователи](https://coderun.yandex.ru/problem/unique-users) [implementation, parsing, strings, std] - [Solution](Algorithms/Easy/175_unique_users)
+* [369. Озадаченный Аркадий](https://coderun.yandex.ru/problem/puzzled-arkady) - [Solution](Algorithms/Easy/369_puzzled_arkady)
 
 ## Medium <a name="algorithms-medium"></a>
 
