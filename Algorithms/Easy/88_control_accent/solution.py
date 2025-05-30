@@ -2,7 +2,7 @@
 # Other solutions: https://github.com/Melodiz/CodeRun
 
 def count_uppercase(word):
-    return sum(1 for char in word if 'A' <= char <= 'Z')
+    return sum(1 for char in word if char.isupper())
 
 def main():
     n = int(input())

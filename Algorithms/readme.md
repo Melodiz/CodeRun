@@ -129,6 +129,7 @@
 * [34. Космический мусорщик](https://coderun.yandex.ru/problem/space-scavenger) [dynamic programming 2D] - [Solution](Algorithms/Easy/34_space_scavenger)
 * [35. Движение по полосам](https://coderun.yandex.ru/problem/traffic-lanes) [dynamic programming 2D] - [Solution](Algorithms/Easy/35_traffic_lanes)
 * [88. Контрольная по ударениям](https://coderun.yandex.ru/problem/control-accent) [line handling, standard library, dict] - [Solution](Algorithms/Easy/88_control_accent)
+* [143. Сортировка вагонов lite](https://coderun.yandex.ru/problem/sorting-of-wagons-lite) [stack] - [Solution](Algorithms/Easy/143_sorting_of_wagons_lite)
 
 ## Medium <a name="algorithms-medium"></a>
 
