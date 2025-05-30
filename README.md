@@ -210,6 +210,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [143. Сортировка вагонов lite](https://coderun.yandex.ru/problem/sorting-of-wagons-lite) [stack] - [Solution](Algorithms/Easy/143_sorting_of_wagons_lite)
 * [175. Уникальные пользователи](https://coderun.yandex.ru/problem/unique-users) [implementation, parsing, strings, std] - [Solution](Algorithms/Easy/175_unique_users)
 * [369. Озадаченный Аркадий](https://coderun.yandex.ru/problem/puzzled-arkady) - [Solution](Algorithms/Easy/369_puzzled_arkady)
+* [352. Камни и украшения](https://coderun.yandex.ru/problem/rocks-and-jewels) [strings] - [Solution](Algorithms/Easy/352_rocks_and_jewels)
 
 ## Medium <a name="algorithms-medium"></a>
 
