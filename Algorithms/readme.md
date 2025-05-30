@@ -121,6 +121,7 @@
 * [308. Билеты в кино](https://coderun.yandex.ru/problem/movie-tickets) [graph theory] - [Solution](Algorithms/Easy/308_movie_tickets)
 * [148. Хипуй](https://coderun.yandex.ru/problem/hipuy) [heap] - [Solution](Algorithms/Easy/148_hipuy)
 * [28. НВП с восстановлением ответа](https://coderun.yandex.ru/problem/nvp-with-response-recovery) [dynamic programming 1D] - [Solution](Algorithms/Easy/28_nvp_with_response_recovery)
+* [124. Вывод листьев](https://coderun.yandex.ru/problem/leaf-conclusion) [binary search tree] - [Solution](Algorithms/Easy/124_leaf_conclusion)
 
 ## Medium <a name="algorithms-medium"></a>
 
