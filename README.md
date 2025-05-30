@@ -205,6 +205,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [138. Сумма в прямоугольнике](https://coderun.yandex.ru/problem/rectangle-sum) [prefix sum] - [Solution](Algorithms/Easy/138_rectangle_sum)
 * [146. Игра в пьяницу](https://coderun.yandex.ru/problem/drunkard-game) [queue] - [Solution](Algorithms/Easy/146_drunkard_game)
 * [34. Космический мусорщик](https://coderun.yandex.ru/problem/space-scavenger) [dynamic programming 2D] - [Solution](Algorithms/Easy/34_space_scavenger)
+* [35. Движение по полосам](https://coderun.yandex.ru/problem/traffic-lanes) [dynamic programming 2D] - [Solution](Algorithms/Easy/35_traffic_lanes)
 
 ## Medium <a name="algorithms-medium"></a>
 
