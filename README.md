@@ -211,6 +211,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [175. Уникальные пользователи](https://coderun.yandex.ru/problem/unique-users) [implementation, parsing, strings, std] - [Solution](Algorithms/Easy/175_unique_users)
 * [369. Озадаченный Аркадий](https://coderun.yandex.ru/problem/puzzled-arkady) - [Solution](Algorithms/Easy/369_puzzled_arkady)
 * [352. Камни и украшения](https://coderun.yandex.ru/problem/rocks-and-jewels) [strings] - [Solution](Algorithms/Easy/352_rocks_and_jewels)
+* [5206. Выставление тегов](https://coderun.yandex.ru/problem/calculate-tags) - [Solution](Algorithms/Easy/5206_calculate_tags)
 
 ## Medium <a name="algorithms-medium"></a>
 
