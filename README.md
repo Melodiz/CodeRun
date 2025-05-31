@@ -214,6 +214,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [5206. Выставление тегов](https://coderun.yandex.ru/problem/calculate-tags) - [Solution](Algorithms/Easy/5206_calculate_tags)
 * [4729. Крош и строка](https://coderun.yandex.ru/problem/krosh-and-string) - [Solution](Algorithms/Easy/4729_krosh_and_string)
 * [445. Плитка](https://coderun.yandex.ru/problem/tiles) - [Solution](Algorithms/Easy/445_tiles)
+* [4728. Крош, Ежик и квадратичная игра](https://coderun.yandex.ru/problem/krosh-and-game) - [Solution](Algorithms/Easy/4728_krosh_and_game)
 
 ## Medium <a name="algorithms-medium"></a>
 
