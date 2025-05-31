@@ -135,6 +135,7 @@
 * [352. Камни и украшения](https://coderun.yandex.ru/problem/rocks-and-jewels) [strings] - [Solution](Algorithms/Easy/352_rocks_and_jewels)
 * [5206. Выставление тегов](https://coderun.yandex.ru/problem/calculate-tags) - [Solution](Algorithms/Easy/5206_calculate_tags)
 * [4729. Крош и строка](https://coderun.yandex.ru/problem/krosh-and-string) - [Solution](Algorithms/Easy/4729_krosh_and_string)
+* [445. Плитка](https://coderun.yandex.ru/problem/tiles) - [Solution](Algorithms/Easy/445_tiles)
 
 ## Medium <a name="algorithms-medium"></a>
 
