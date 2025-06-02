@@ -216,6 +216,8 @@ In the future, I may add hints and other personal notes. Good luck!
 * [445. Плитка](https://coderun.yandex.ru/problem/tiles) - [Solution](Algorithms/Easy/445_tiles)
 * [4728. Крош, Ежик и квадратичная игра](https://coderun.yandex.ru/problem/krosh-and-game) - [Solution](Algorithms/Easy/4728_krosh_and_game)
 * [353. Сортировка положительных чисел в обратном порядке (разминка)](https://coderun.yandex.ru/problem/sorting-reverse-order) [sort, json, http] - [Solution](Algorithms/Easy/353_sorting_reverse_order)
+* [349. Опять JSON’ы перекладывать (разминка)](https://coderun.yandex.ru/problem/merge-jsons-2) [json] - [Solution](Algorithms/Easy/349_merge_jsons_2)
+* [324. Много стульев](https://coderun.yandex.ru/problem/trading-ya-intern) [greedy, sort] - [Solution](Algorithms/Easy/324_trading_ya_intern)
 
 ## Medium <a name="algorithms-medium"></a>
 
