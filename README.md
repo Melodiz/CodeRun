@@ -218,6 +218,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [353. Сортировка положительных чисел в обратном порядке (разминка)](https://coderun.yandex.ru/problem/sorting-reverse-order) [sort, json, http] - [Solution](Algorithms/Easy/353_sorting_reverse_order)
 * [349. Опять JSON’ы перекладывать (разминка)](https://coderun.yandex.ru/problem/merge-jsons-2) [json] - [Solution](Algorithms/Easy/349_merge_jsons_2)
 * [324. Много стульев](https://coderun.yandex.ru/problem/trading-ya-intern) [greedy, sort] - [Solution](Algorithms/Easy/324_trading_ya_intern)
+* [176. День рождения Васи](https://coderun.yandex.ru/problem/recipes) [implementation] - [Solution](Algorithms/Easy/176_recipes)
 
 ## Medium <a name="algorithms-medium"></a>
 
