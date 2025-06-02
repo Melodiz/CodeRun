@@ -137,6 +137,7 @@
 * [4729. Крош и строка](https://coderun.yandex.ru/problem/krosh-and-string) - [Solution](Algorithms/Easy/4729_krosh_and_string)
 * [445. Плитка](https://coderun.yandex.ru/problem/tiles) - [Solution](Algorithms/Easy/445_tiles)
 * [4728. Крош, Ежик и квадратичная игра](https://coderun.yandex.ru/problem/krosh-and-game) - [Solution](Algorithms/Easy/4728_krosh_and_game)
+* [353. Сортировка положительных чисел в обратном порядке (разминка)](https://coderun.yandex.ru/problem/sorting-reverse-order) [sort, json, http] - [Solution](Algorithms/Easy/353_sorting_reverse_order)
 
 ## Medium <a name="algorithms-medium"></a>
 
