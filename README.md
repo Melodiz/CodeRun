@@ -223,6 +223,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [380. Посадка в самолет](https://coderun.yandex.ru/problem/plane-boarding) [implementation] - [Solution](Algorithms/Easy/380_plane_boarding)
 * [441. Табло](https://coderun.yandex.ru/problem/tableau) - [Solution](Algorithms/Easy/441_tableau)
 * [449. Комбо](https://coderun.yandex.ru/problem/combo) - [Solution](Algorithms/Easy/449_combo)
+* [4862. 6 из 36 (2.0)](https://coderun.yandex.ru/problem/6-out-of-36-squared) - [Solution](Algorithms/Easy/4862_6_out_of_36_squared)
 
 ## Medium <a name="algorithms-medium"></a>
 
