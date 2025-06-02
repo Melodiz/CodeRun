@@ -144,6 +144,7 @@
 * [357. Граф подстрок](https://coderun.yandex.ru/problem/substring-graph) [standard library, graph theory, strings] - [Solution](Algorithms/Easy/357_substring_graph)
 * [380. Посадка в самолет](https://coderun.yandex.ru/problem/plane-boarding) [implementation] - [Solution](Algorithms/Easy/380_plane_boarding)
 * [441. Табло](https://coderun.yandex.ru/problem/tableau) - [Solution](Algorithms/Easy/441_tableau)
+* [449. Комбо](https://coderun.yandex.ru/problem/combo) - [Solution](Algorithms/Easy/449_combo)
 
 ## Medium <a name="algorithms-medium"></a>
 
