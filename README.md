@@ -220,6 +220,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [324. Много стульев](https://coderun.yandex.ru/problem/trading-ya-intern) [greedy, sort] - [Solution](Algorithms/Easy/324_trading_ya_intern)
 * [176. День рождения Васи](https://coderun.yandex.ru/problem/recipes) [implementation] - [Solution](Algorithms/Easy/176_recipes)
 * [357. Граф подстрок](https://coderun.yandex.ru/problem/substring-graph) [standard library, graph theory, strings] - [Solution](Algorithms/Easy/357_substring_graph)
+* [380. Посадка в самолет](https://coderun.yandex.ru/problem/plane-boarding) [implementation] - [Solution](Algorithms/Easy/380_plane_boarding)
 
 ## Medium <a name="algorithms-medium"></a>
 
