@@ -148,6 +148,7 @@
 * [4862. 6 из 36 (2.0)](https://coderun.yandex.ru/problem/6-out-of-36-squared) - [Solution](Algorithms/Easy/4862_6_out_of_36_squared)
 * [4864. Петя и Вася – онлайн эксперимент (2.0)](https://coderun.yandex.ru/problem/online-experiment-2) - [Solution](Algorithms/Easy/4864_online_experiment_2)
 * [356. Забывчивый курьер](https://coderun.yandex.ru/problem/oblivious-courier) [dynamic programming, probability theory] - [Solution](Algorithms/Easy/356_oblivious_courier)
+* [530. Нейрологотип](https://coderun.yandex.ru/problem/neuro-logo) - [Solution](Algorithms/Easy/530_neuro_logo)
 
 ## Medium <a name="algorithms-medium"></a>
 
