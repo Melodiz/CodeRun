@@ -227,6 +227,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [4864. Петя и Вася – онлайн эксперимент (2.0)](https://coderun.yandex.ru/problem/online-experiment-2) - [Solution](Algorithms/Easy/4864_online_experiment_2)
 * [356. Забывчивый курьер](https://coderun.yandex.ru/problem/oblivious-courier) [dynamic programming, probability theory] - [Solution](Algorithms/Easy/356_oblivious_courier)
 * [530. Нейрологотип](https://coderun.yandex.ru/problem/neuro-logo) - [Solution](Algorithms/Easy/530_neuro_logo)
+* [249. Волейбол](https://coderun.yandex.ru/problem/volleyball) [dynamic programming, combinatorics] - [Solution](Algorithms/Easy/249_volleyball)
 
 ## Medium <a name="algorithms-medium"></a>
 
