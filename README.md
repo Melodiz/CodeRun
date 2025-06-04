@@ -228,6 +228,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [356. Забывчивый курьер](https://coderun.yandex.ru/problem/oblivious-courier) [dynamic programming, probability theory] - [Solution](Algorithms/Easy/356_oblivious_courier)
 * [530. Нейрологотип](https://coderun.yandex.ru/problem/neuro-logo) - [Solution](Algorithms/Easy/530_neuro_logo)
 * [249. Волейбол](https://coderun.yandex.ru/problem/volleyball) [dynamic programming, combinatorics] - [Solution](Algorithms/Easy/249_volleyball)
+* [305. Пользовательские логи](https://coderun.yandex.ru/problem/user-logs-sessions-events) [implementation, parsing] - [Solution](Algorithms/Easy/305_user_logs_sessions_events)
 
 ## Medium <a name="algorithms-medium"></a>
 
