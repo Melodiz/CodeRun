@@ -230,6 +230,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [249. Волейбол](https://coderun.yandex.ru/problem/volleyball) [dynamic programming, combinatorics] - [Solution](Algorithms/Easy/249_volleyball)
 * [305. Пользовательские логи](https://coderun.yandex.ru/problem/user-logs-sessions-events) [implementation, parsing] - [Solution](Algorithms/Easy/305_user_logs_sessions_events)
 * [342. Статистика таблиц](https://coderun.yandex.ru/problem/tables-statistics) [implementation, parsing] - [Solution](Algorithms/Easy/342_tables_statistics)
+* [531. Шоу воздушных шаров](https://coderun.yandex.ru/problem/air-baloons-show) [dynamic programming, algorithms] - [Solution](Algorithms/Easy/531_air_baloons_show)
 
 ## Medium <a name="algorithms-medium"></a>
 
