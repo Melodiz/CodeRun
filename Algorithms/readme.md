@@ -155,6 +155,7 @@
 * [531. Шоу воздушных шаров](https://coderun.yandex.ru/problem/air-baloons-show) [dynamic programming, algorithms] - [Solution](Algorithms/Easy/531_air_baloons_show)
 * [310. Кодирование длин серий](https://coderun.yandex.ru/problem/rle-test) [standard library, parsing, strings] - [Solution](Algorithms/Easy/310_rle_test)
 * [302. Восстановить матрицу](https://coderun.yandex.ru/problem/restore-the-matrix) [implementation, greedy, data structures, constructive, std] - [Solution](Algorithms/Easy/302_restore_the_matrix)
+* [462. Индекс септаккорда](https://coderun.yandex.ru/problem/seventh-chord) [counting, greedy, prefix sum] - [Solution](Algorithms/Easy/462_seventh_chord)
 
 ## Medium <a name="algorithms-medium"></a>
 
