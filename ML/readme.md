@@ -48,3 +48,4 @@
 * [384. Звёздные карты 2.0](https://coderun.yandex.ru/problem/star-maps-v2/) - [Solution](Hard/384_star_maps_v2)
 * [4865. 1984 (2.0)](https://coderun.yandex.ru/problem/1984-2/) - [Solution](Hard/4865_1984_2)
 * [4867. Исправить все опечатки (2.0)](https://coderun.yandex.ru/problem/fix-all-misprints-2/) - [Solution](Hard/4867_fix_all_misprints_2)
+* [243. Рекомендательная система SVD](https://coderun.yandex.ru/problem/svd-recommender) [machine learning] - [Solution](ML/Hard/243_svd_recommender)

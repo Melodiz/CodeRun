@@ -77,6 +77,7 @@ In the future, I may add hints and other personal notes. Good luck!
 ## Hard <a name="ml-hard"></a>
 * [384. Звёздные карты 2.0](https://coderun.yandex.ru/problem/star-maps-v2/) - [Solution](ML/Hard/384_star_maps_v2)
 * [4865. 1984 (2.0)](https://coderun.yandex.ru/problem/1984-2/) - [Solution](ML/Hard/4865_1984_2)
+* [243. Рекомендательная система SVD](https://coderun.yandex.ru/problem/svd-recommender) [machine learning] - [Solution](ML/Hard/243_svd_recommender)
 
 ---
 
