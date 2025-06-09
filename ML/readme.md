@@ -43,6 +43,7 @@
 * [572. Поход в горы](https://coderun.yandex.ru/problem/mountain-trip/) [binary search] - [Solution](Medium/572_mountain_trip)
 * [240. Монетки](https://coderun.yandex.ru/problem/coins/) [probability theory] - [Solution](Medium/240_coins)
 * [6886. Угадай функцию](https://coderun.yandex.ru/problem/phi/) [number theory] - [Solution](Medium/6886_phi)
+* [262. Лента рекомендаций](https://coderun.yandex.ru/problem/recommendations) [machine learning] - [Solution](ML/Medium/262_recommendations)
 
 ## Hard <a name="ml-hard"></a>
 * [384. Звёздные карты 2.0](https://coderun.yandex.ru/problem/star-maps-v2/) - [Solution](Hard/384_star_maps_v2)
