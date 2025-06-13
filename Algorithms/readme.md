@@ -179,3 +179,4 @@
 * [27. Разложение в сумму кубов](https://coderun.yandex.ru/problem/sum-of-cubes/) [dynamic programming] - [Solution](Medium/27_sum_of_cubes)
 * [121. Глубина добавляемых элементов](https://coderun.yandex.ru/problem/depth-added-elements/) [binary search tree, sort] - [Solution](Medium/121_depth_added_elements)
 * [109. Медиана объединения-2](https://coderun.yandex.ru/problem/median-union-2) [binary search] - [Solution](Algorithms/Medium/109_median_union_2)
+* [128. Родословная: число потомков](https://coderun.yandex.ru/problem/pedigree-number-of-descendants) [dict, dynamic programming, tree] - [Solution](Algorithms/Medium/128_pedigree_number_of_descendants)
