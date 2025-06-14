@@ -262,6 +262,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [128. Родословная: число потомков](https://coderun.yandex.ru/problem/pedigree-number-of-descendants) [dict, dynamic programming, tree] - [Solution](Algorithms/Medium/128_pedigree_number_of_descendants)
 * [45. Игрушечный лабиринт](https://coderun.yandex.ru/problem/toy-maze) [bfs] - [Solution](Algorithms/Medium/45_toy_maze)
 * [447. НОД](https://coderun.yandex.ru/problem/gcd) - [Solution](Algorithms/Medium/447_gcd)
+* [63. Треугольник Максима](https://coderun.yandex.ru/problem/maxim-triangle) [intervals intersection] - [Solution](Algorithms/Medium/63_maxim_triangle)
 
 ---
 
