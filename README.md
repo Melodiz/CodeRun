@@ -22,6 +22,7 @@ To find the solution to a specific task:
 - [Problem List Algorithms ](#problem-list-algorithms-)
   - [Easy ](#easy--1)
   - [Medium ](#medium--1)
+  - [Hard ](#hard--1)
 - [Problem List - autumn\_intern\_23 ](#problem-list---autumn_intern_23-)
 
 In the future, I may add hints and other personal notes. Good luck!
@@ -263,6 +264,13 @@ In the future, I may add hints and other personal notes. Good luck!
 * [45. Игрушечный лабиринт](https://coderun.yandex.ru/problem/toy-maze) [bfs] - [Solution](Algorithms/Medium/45_toy_maze)
 * [447. НОД](https://coderun.yandex.ru/problem/gcd) - [Solution](Algorithms/Medium/447_gcd)
 * [63. Треугольник Максима](https://coderun.yandex.ru/problem/maxim-triangle) [intervals intersection] - [Solution](Algorithms/Medium/63_maxim_triangle)
+
+
+## Hard <a name="algorithms-hard"></a>
+
+* [5313. Ча-ча-ча](https://coderun.yandex.ru/problem/cha_cha) - [Solution](Algorithms/Hard/5313_cha_cha)
+
+
 
 ---
 

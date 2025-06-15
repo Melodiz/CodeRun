@@ -183,3 +183,8 @@
 * [45. Игрушечный лабиринт](https://coderun.yandex.ru/problem/toy-maze) [bfs] - [Solution](Algorithms/Medium/45_toy_maze)
 * [447. НОД](https://coderun.yandex.ru/problem/gcd) - [Solution](Algorithms/Medium/447_gcd)
 * [63. Треугольник Максима](https://coderun.yandex.ru/problem/maxim-triangle) [intervals intersection] - [Solution](Algorithms/Medium/63_maxim_triangle)
+
+## Hard
+
+* [5313. Ча-ча-ча](https://coderun.yandex.ru/problem/cha_cha) - [Solution](Algorithms/Hard/5313_cha_cha)
+ <a name="algorithms-hard"></a>
