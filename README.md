@@ -271,6 +271,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [5313. Ча-ча-ча](https://coderun.yandex.ru/problem/cha_cha) - [Solution](Algorithms/Hard/5313_cha_cha)
 * [586. Число](https://coderun.yandex.ru/problem/number) [ad hoc, math, implementation] - [Solution](Algorithms/Hard/586_number)
 * [587. Ограничитель частоты](https://coderun.yandex.ru/problem/frequency-limitation) [constructive] - [Solution](Algorithms/Hard/587_frequency_limitation)
+* [406. Заезд](https://coderun.yandex.ru/problem/lap) [implementation] - [Solution](Algorithms/Hard/406_lap)
 
 
 
