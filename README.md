@@ -269,6 +269,7 @@ In the future, I may add hints and other personal notes. Good luck!
 ## Hard <a name="algorithms-hard"></a>
 
 * [5313. Ча-ча-ча](https://coderun.yandex.ru/problem/cha_cha) - [Solution](Algorithms/Hard/5313_cha_cha)
+* [586. Число](https://coderun.yandex.ru/problem/number) [ad hoc, math, implementation] - [Solution](Algorithms/Hard/586_number)
 
 
 
