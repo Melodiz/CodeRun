@@ -264,6 +264,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [45. Игрушечный лабиринт](https://coderun.yandex.ru/problem/toy-maze) [bfs] - [Solution](Algorithms/Medium/45_toy_maze)
 * [447. НОД](https://coderun.yandex.ru/problem/gcd) - [Solution](Algorithms/Medium/447_gcd)
 * [63. Треугольник Максима](https://coderun.yandex.ru/problem/maxim-triangle) [intervals intersection] - [Solution](Algorithms/Medium/63_maxim_triangle)
+* [89. Дополнительная проверка на списывание](https://coderun.yandex.ru/problem/additional-check-cheating) [line handling, standard library, dict, counting] - [Solution](Algorithms/Medium/89_additional_check_cheating)
 
 
 ## Hard <a name="algorithms-hard"></a>
@@ -272,6 +273,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [586. Число](https://coderun.yandex.ru/problem/number) [ad hoc, math, implementation] - [Solution](Algorithms/Hard/586_number)
 * [587. Ограничитель частоты](https://coderun.yandex.ru/problem/frequency-limitation) [constructive] - [Solution](Algorithms/Hard/587_frequency_limitation)
 * [406. Заезд](https://coderun.yandex.ru/problem/lap) [implementation] - [Solution](Algorithms/Hard/406_lap)
+* [408. Заезд 2.0](https://coderun.yandex.ru/problem/lap-2) [implementation, sort, data structures] - [Solution](Algorithms/Hard/408_lap_2)
 
 
 
