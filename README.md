@@ -265,6 +265,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [447. НОД](https://coderun.yandex.ru/problem/gcd) - [Solution](Algorithms/Medium/447_gcd)
 * [63. Треугольник Максима](https://coderun.yandex.ru/problem/maxim-triangle) [intervals intersection] - [Solution](Algorithms/Medium/63_maxim_triangle)
 * [89. Дополнительная проверка на списывание](https://coderun.yandex.ru/problem/additional-check-cheating) [line handling, standard library, dict, counting] - [Solution](Algorithms/Medium/89_additional_check_cheating)
+* [5316. Снежки](https://coderun.yandex.ru/problem/snowballs) - [Solution](Algorithms/Medium/5316_snowballs)
 
 
 ## Hard <a name="algorithms-hard"></a>
