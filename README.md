@@ -267,6 +267,7 @@ In the future, I may add hints and other personal notes. Good luck!
 * [89. Дополнительная проверка на списывание](https://coderun.yandex.ru/problem/additional-check-cheating) [line handling, standard library, dict, counting] - [Solution](Algorithms/Medium/89_additional_check_cheating)
 * [5316. Снежки](https://coderun.yandex.ru/problem/snowballs) - [Solution](Algorithms/Medium/5316_snowballs)
 * [444. Крестики-нолики](https://coderun.yandex.ru/problem/tic-tac-toe) - [Solution](Algorithms/Medium/444_tic_tac_toe)
+* [440. У кого больше королев?](https://coderun.yandex.ru/problem/queen-amount) - [Solution](Algorithms/Medium/440_queen_amount)
 
 
 ## Hard <a name="algorithms-hard"></a>
