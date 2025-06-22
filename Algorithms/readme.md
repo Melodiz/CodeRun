@@ -157,6 +157,7 @@
 * [302. Восстановить матрицу](https://coderun.yandex.ru/problem/restore-the-matrix) [implementation, greedy, data structures, constructive, std] - [Solution](Algorithms/Easy/302_restore_the_matrix)
 * [462. Индекс септаккорда](https://coderun.yandex.ru/problem/seventh-chord) [counting, greedy, prefix sum] - [Solution](Algorithms/Easy/462_seventh_chord)
 * [343. Кольцевая линия](https://coderun.yandex.ru/problem/metro-loop) [implementation] - [Solution](Algorithms/Easy/343_metro_loop)
+* [290. Игра](https://coderun.yandex.ru/problem/game) [implementation] - [Solution](Algorithms/Easy/290_game)
 
 ## Medium <a name="algorithms-medium"></a>
 
