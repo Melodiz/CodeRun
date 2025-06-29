@@ -159,6 +159,7 @@
 * [343. Кольцевая линия](https://coderun.yandex.ru/problem/metro-loop) [implementation] - [Solution](Algorithms/Easy/343_metro_loop)
 * [290. Игра](https://coderun.yandex.ru/problem/game) [implementation] - [Solution](Algorithms/Easy/290_game)
 * [289. Рулетка](https://coderun.yandex.ru/problem/roulette) [combinatorics, probability theory] - [Solution](Algorithms/Easy/289_roulette)
+* [22. Минимум на отрезке](https://coderun.yandex.ru/problem/minimum-of-the-segment) [deque, heap] - [Solution](Algorithms/Easy/22_minimum_of_the_segment)
 
 ## Medium <a name="algorithms-medium"></a>
 
