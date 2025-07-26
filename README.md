@@ -15,17 +15,57 @@ To find the solution to a specific task:
 - [CodeRun Solutions](#coderun-solutions)
   - [How to Use This Repository](#how-to-use-this-repository)
   - [Table of Contents](#table-of-contents)
-- [ML Problem List ](#ml-problem-list-)
+- [Problem List - CodeRun Boost (Summer 2025) ](#problem-list---coderun-boost-summer-2025-)
   - [Easy ](#easy-)
   - [Medium ](#medium-)
   - [Hard ](#hard-)
-- [Problem List Algorithms ](#problem-list-algorithms-)
+- [ML Problem List ](#ml-problem-list-)
   - [Easy ](#easy--1)
   - [Medium ](#medium--1)
   - [Hard ](#hard--1)
+- [Problem List Algorithms ](#problem-list-algorithms-)
+  - [Easy ](#easy--2)
+  - [Medium ](#medium--2)
+  - [Hard ](#hard--2)
 - [Problem List - autumn\_intern\_23 ](#problem-list---autumn_intern_23-)
 
 In the future, I may add hints and other personal notes. Good luck!
+
+---
+
+# Problem List - CodeRun Boost (Summer 2025) <a name="problem-list---coderun-boost-summer-2025"></a>
+
+## Easy <a name="boost-easy"></a>
+
+* [7265. Переполох в почетном карауле](https://coderun.yandex.ru/problem/commotion-in-the-guard) - [Solution](CodeRun_Boost/7265_Commotion_in_the_guard)
+* [7266. Лестница с подвохом](https://coderun.yandex.ru/problem/stairs) - [Solution](CodeRun_Boost/7266_stairs)
+* [7267. Стёртый лидерборд](https://coderun.yandex.ru/problem/erased-leaderboard) - [Solution](CodeRun_Boost/7267_erased_leaderboard)
+* [7269. Первый seed в рандомном саду](https://coderun.yandex.ru/problem/first_seed_random_garden) - [Solution](CodeRun_Boost/7269_first_seed_random_garden)
+* [7270. Любимые мелодии принцессы Брейс](https://coderun.yandex.ru/problem/favorite-melodies) - [Solution](CodeRun_Boost/7270_favorite_melodies)
+* [7273. Волк в овечьей шкуре](https://coderun.yandex.ru/problem/sheep-wolf) - [Solution](CodeRun_Boost/7273_sheep_wolf)
+* [7326. Погоня](https://coderun.yandex.ru/problem/chase) - [Solution](CodeRun_Boost/7326_chase)
+* [7500. Трёхбуквенная баллада](https://coderun.yandex.ru/problem/three-letter-ballad) - [Solution](CodeRun_Boost/7500_three_letter_ballad)
+* [7502. Пустые сети](https://coderun.yandex.ru/problem/prob-win) - [Solution](CodeRun_Boost/7502_prob_win)
+* [7503. Разрушение дворцовой стены](https://coderun.yandex.ru/problem/city-wall-destruction) - [Solution](CodeRun_Boost/7503_city_wall_destruction)
+* [7505. Разорванное кольцо](https://coderun.yandex.ru/problem/broken-ring) - [Solution](CodeRun_Boost/7505_broken_ring)
+* [7506. Криптограмма?](https://coderun.yandex.ru/problem/cryptogram) - [Solution](CodeRun_Boost/7506_cryptogram)
+* [7507. Место встречи](https://coderun.yandex.ru/problem/venue) - [Solution](CodeRun_Boost/7507_venue)
+
+## Medium <a name="boost-medium"></a>
+
+* [7165. Добро пожаловать в мир CodeRun!](https://coderun.yandex.ru/problem/coderun-welcome) - [Solution](CodeRun_Boost/7165_coderun_welcome)
+* [7264. Мост во дворец](https://coderun.yandex.ru/problem/bridge-to-the-palace) - [Solution](CodeRun_Boost/7264_Bridge_to_the_palace)
+* [7268. Ключ от волшебной двери](https://coderun.yandex.ru/problem/choose_primes) - [Solution](CodeRun_Boost/7268_choose_primes)
+* [7272. Внезапный шторм](https://coderun.yandex.ru/problem/sudden-storm) - [Solution](CodeRun_Boost/7272_sudden_storm)
+* [7327. В двоичном лесу](https://coderun.yandex.ru/problem/binary-forest) - [Solution](CodeRun_Boost/7327_binary_forest)
+* [7328. Игровое поле](https://coderun.yandex.ru/problem/playing-field) - [Solution](CodeRun_Boost/7328_playing_field)
+* [7504. Наследие Цифровой Цивилизации](https://coderun.yandex.ru/problem/digital-civilization-legacy) - [Solution](CodeRun_Boost/7504_digital_civilization_legacy)
+* [7508. Древние тоннели](https://coderun.yandex.ru/problem/ancient-tunnels) - [Solution](CodeRun_Boost/7508_ancient_tunnels)
+
+## Hard <a name="boost-hard"></a>
+
+* [7271. Языковой барьер](https://coderun.yandex.ru/problem/language-barier) - [Solution](CodeRun_Boost/7271_language_barier)
+* [7509. Ядро в опасности](https://coderun.yandex.ru/problem/danger-core) - [Solution](CodeRun_Boost/7509_danger_core)
 
 ---
 
