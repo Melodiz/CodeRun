@@ -161,6 +161,17 @@
 * [289. Рулетка](https://coderun.yandex.ru/problem/roulette) [combinatorics, probability theory] - [Solution](Algorithms/Easy/289_roulette)
 * [22. Минимум на отрезке](https://coderun.yandex.ru/problem/minimum-of-the-segment) [deque, heap] - [Solution](Algorithms/Easy/22_minimum_of_the_segment)
 * [467. Суеверный коллекционер](https://coderun.yandex.ru/problem/next-lucky-ticket) [implementation] - [Solution](Algorithms/Easy/467_next_lucky_ticket)
+* [9010. YPE html><html lang="ru" data-env="{}" data-scroll-behavior="smooth" class="HR-11-2-4 Theme Theme_color_hrDark Theme_root_hrDark Theme_controls_size_m"><head><meta charSet="utf-8" data-next-head=""/><meta name="viewport" content="width=device-width, initial-scale=1" data-next-head=""/><title data-next-head="">Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
+* [9010. Тепловые панели](https://coderun.yandex.ru/problem/thermal-panels) [2025-winter_common] - [Solution](Algorithms/Easy/9010_thermal_panels)
 
 ## Medium <a name="algorithms-medium"></a>
 
