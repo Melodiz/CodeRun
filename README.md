@@ -1,5 +1,7 @@
 # CodeRun Solutions
 
+> **Note:** These solutions have moved to **[https://github.com/Melodiz/dailycode/tree/main/CodeRun](https://github.com/Melodiz/dailycode/tree/main/CodeRun)** (my daily code repository). You can find all these solutions and more there. Enjoy!
+
 This is the largest archive of solutions to problems from the CodeRun website that I could find on GitHub. All tasks are personally solved by me, so if you have any questions, feel free to submit an issue or contact me directly on Telegram at t.me/Mellodizzz.
 
 ## How to Use This Repository
